@@ -23,6 +23,7 @@ Este projeto pode ser aplicado em diversas situações:
 
 * [Instalações](#instalações)
   * [Pré-Requisitos](#pré-requisitos)
+  * [Recursos Adicionais](#recursos-adicionais)
 
 ## Instalações
 
@@ -34,3 +35,8 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 - [Docker Engine](https://docs.docker.com/engine/install/).
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 - [Conta de estudante no Microsoft Azure](https://icei.pucminas.br/index.php/azurepucminas).
+
+### Recursos Adicionais
+
+- [Docker Hub](https://hub.docker.com).
+- [Docker Docs](https://docs.docker.com).
