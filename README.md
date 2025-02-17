@@ -58,3 +58,13 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 ### STEP 4 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure
 
 [Subindo uma imagem de container para a nuvem do Microsoft Azure]()
+
+## Contato
+
+Henrique Mendonça Castelar Campos - [henriquemendonacastelar@gmail.com](mailto:henriquemendonacastelar@gmail.com)
+
+GitHub: [github.com/Henriquemcc](https://github.com/Henriquemcc)
+
+## License
+
+Este projeto é licenciado sob a [MIT License](https://mit-license.org/) - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
