@@ -40,3 +40,21 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 
 - [Docker Hub](https://hub.docker.com).
 - [Docker Docs](https://docs.docker.com).
+
+## Roadmap
+
+### STEP 1 - Comandos básicos do Docker
+
+[Comandos básicos do Docker]()
+
+### STEP 2 - Arquivos Docker Compose
+
+[Arquivos Docker Compose]()
+
+### STEP 3 - Containerizando uma Aplicação
+
+[Containerizando uma aplicação]()
+
+### STEP 4 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure
+
+[Subindo uma imagem de container para a nuvem do Microsoft Azure]()
