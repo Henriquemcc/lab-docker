@@ -24,6 +24,12 @@ Este projeto pode ser aplicado em diversas situações:
 * [Instalações](#instalações)
   * [Pré-Requisitos](#pré-requisitos)
   * [Recursos Adicionais](#recursos-adicionais)
+* [Roadmap](#roadmap)
+  * [STEP 1 - Comandos básicos do Docker](#step-1---comandos-básicos-do-docker)
+  * [STEP 2 - Arquivos Docker Compose](#step-2---arquivos-docker-compose)
+  * [STEP 3 - Containerizando uma Aplicação](#step-3---containerizando-uma-aplicação)
+  * [STEP 4 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure](#step-4---subindo-uma-imagem-de-container-para-a-nuvem-do-microsoft-azure)
+  * [Desafio](#desafio)
 
 ## Instalações
 
