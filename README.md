@@ -37,7 +37,7 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 
 ### Pré-Requisitos
 
-- Computador com Linux, Windows ou Mac OS, com usuário de administrador.
+- Computador com Linux, Windows ou Mac OS, com usuário com privilégio de administrador.
 - [Docker Engine](https://docs.docker.com/engine/install/).
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 - [Conta de estudante no Microsoft Azure](https://icei.pucminas.br/index.php/azurepucminas).
