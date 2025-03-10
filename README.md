@@ -42,6 +42,7 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 - [Docker Engine](https://docs.docker.com/engine/install/).
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 - [Conta de estudante no Microsoft Azure](https://icei.pucminas.br/index.php/azurepucminas).
+- [Conta no Docker Hub](https://app.docker.com/signup).
 
 ### Recursos Adicionais
 
