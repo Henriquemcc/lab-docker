@@ -54,17 +54,25 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 
 ## Roadmap
 
+### STEP 1 - Criando e Executando Containers Docker
+
+[Criando e Executando Containers Docker](criando-executando-containers-docker/README.md)
+
+### STEP 2 - Criando Arquivos Docker Compose
+
+[Criando Arquivos Docker Compose](criando-arquivos-docker-compose/README.md)
+
 ### STEP 3 - Containerizando uma Aplicação
 
-[Containerizando uma aplicação]()
+[Containerizando uma aplicação](containerizando-uma-aplicacao/README.md)
 
 ### STEP 4 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure
 
-[Subindo uma imagem de container para a nuvem do Microsoft Azure]()
+[Subindo uma imagem de container para a nuvem do Microsoft Azure](subindo-uma-imagem-container-nuvem-azure/README.md)
 
 ### Desafio
 
-[Desafio]()
+[Desafio](desafio/README.md)
 
 ### Extra
 
