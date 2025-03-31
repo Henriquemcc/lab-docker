@@ -125,7 +125,7 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 
 ## STEP 1.6 - Parando a execução do container
 
-Nesta etapa, iremos para a execução do container Docker criado anteriormente. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+Nesta etapa, iremos parar a execução do container Docker criado anteriormente. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
 ```
 docker stop <ID_DO_CONTAINER>
