@@ -107,3 +107,13 @@ Ao executar o comando, será mostrada na saída um conjunto de letras e números
 ```
 3d12b129343c56fd95ee1e11e8b1ec3e57a0b02ee3a5eadaa3265b099a24ac4d
 ```
+
+## STEP 1.5 - Parando a execução do container
+
+Nesta etapa, iremos para a execução do container Docker criado anteriormente. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker stop <ID_DO_CONTAINER>
+```
+
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado na saída do comando anterior.
