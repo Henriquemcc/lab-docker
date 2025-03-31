@@ -48,16 +48,11 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 
 - [Docker Hub](https://hub.docker.com).
 - [Docker Docs](https://docs.docker.com).
+- Documentação
+  - [Comandos básicos do Docker](documentacao/comandos-basicos/README.md)
+  - [Arquivos Docker Compose]()
 
 ## Roadmap
-
-### STEP 1 - Comandos básicos do Docker
-
-[Comandos básicos do Docker](documentacao/comandos-basicos/README.md)
-
-### STEP 2 - Arquivos Docker Compose
-
-[Arquivos Docker Compose]()
 
 ### STEP 3 - Containerizando uma Aplicação
 
