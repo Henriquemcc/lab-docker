@@ -91,3 +91,19 @@ Para testar o funcionamento do Nginx, em um navegador web (na mesma máquina), a
 Caso o Nginx esteja executando corretamente, será exibida uma página com a mensagem: "Welcome to nginx!"
 
 Para terminar a execução, digite o comando: Control + C.
+
+## STEP 1.4 - Criando e executando o container Docker (de forma silenciosa)
+
+Nesta etapa, iremos criar e executar o container Docker acima, para rodar em segundo plano, desalocando do terminal. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker run --detach --publish 80:8080 nginx
+```
+
+A opção ```--detach``` roda o container em segundo plano e imprime o ID do container.
+
+Ao executar o comando, será mostrada na saída um conjunto de letras e números como este:
+
+```
+3d12b129343c56fd95ee1e11e8b1ec3e57a0b02ee3a5eadaa3265b099a24ac4d
+```
