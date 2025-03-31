@@ -155,7 +155,25 @@ docker restart <ID_DO_CONTAINER>
 
 O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step [step 1.5](#step-15---listando-os-containers-em-execução).
 
-## STEP 1.9 - Parando a execução do container
+## STEP 1.9 - Conectando ao terminal do container
+
+Nesta etapa, iremos conectar no terminal do container. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker exec --interactive --tty <ID_DO_CONTAINER> bash
+```
+
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step [step 1.5](#step-15---listando-os-containers-em-execução).
+
+A opção ```--interactive``` (ou ```-i```) força o container executar de forma interativa.
+
+A opção ```--tty``` (ou ```-t```) aloca um pseudo tty.
+
+Ao executar esse comando, será exibido o shell do container Docker, permitindo executar comandos dentro desse container.
+
+Para sair do terminal do container, digite o comando: Control + D.
+
+## STEP 1.10 - Parando a execução do container
 
 Agora, iremos novamente parar a execução do container. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -165,7 +183,7 @@ docker stop <ID_DO_CONTAINER>
 
 O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step [step 1.5](#step-15---listando-os-containers-em-execução).
 
-## STEP 1.10 - Deletando o container
+## STEP 1.11 - Deletando o container
 
 Nesta etapa, iremos deletar o container. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -175,7 +193,7 @@ docker rm <ID_DO_CONTAINER>
 
 O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do [step 1.5](#step-15---listando-os-containers-em-execução).
 
-## Step 1.11 - Explorando o Docker Hub
+## Step 1.12 - Explorando o Docker Hub
 
 Nesta etapa, iremos explorar as imagens de container disponíveis no Docker Hub. Para isso, acesse em um navegador web: https://hub.docker.com/ e na barra de pesquisa digite a imagem desejada.
 
