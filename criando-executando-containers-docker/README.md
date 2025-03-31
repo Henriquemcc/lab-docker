@@ -174,3 +174,19 @@ docker rm <ID_DO_CONTAINER>
 ```
 
 O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do [step 1.5](#step-15---listando-os-containers-em-execução).
+
+## Step 1.11 - Explorando o Docker Hub
+
+Nesta etapa, iremos explorar as imagens de container disponíveis no Docker Hub. Para isso, acesse em um navegador web: https://hub.docker.com/ e na barra de pesquisa digite a imagem desejada.
+
+Exemplos de imagens disponíveis:
+
+Distribuições Linux: "Ubuntu", "Fedora", "Debian", "Oracle Linux", "Alpine", "CentOS".
+
+Linguagens de Programação: "Python", "Node", "OpenJDK", "GoLang", "PHP".
+
+Banco de Dados: "MySQL", "MariaDB", "Postgres".
+
+Servidores Web: "Apache", "Nginx".
+
+Outros: "WordPress".
