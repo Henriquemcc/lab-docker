@@ -108,7 +108,22 @@ Ao executar o comando, será mostrada na saída um conjunto de letras e números
 3d12b129343c56fd95ee1e11e8b1ec3e57a0b02ee3a5eadaa3265b099a24ac4d
 ```
 
-## STEP 1.5 - Parando a execução do container
+## STEP 1.5 - Listando os containers em execução
+
+Nesta etapa, iremos novamente listar os containers em execução.  Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker ps
+```
+
+Como nós temos um container em execução, será mostrada uma saída parecida com esta:
+
+```
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS         PORTS                                             NAMES
+3d12b129343c   nginx     "/docker-entrypoint.…"   10 minutes ago   Up 7 seconds   80/tcp, 0.0.0.0:80->8080/tcp, [::]:80->8080/tcp   festive_murdock
+```
+
+## STEP 1.6 - Parando a execução do container
 
 Nesta etapa, iremos para a execução do container Docker criado anteriormente. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -116,4 +131,4 @@ Nesta etapa, iremos para a execução do container Docker criado anteriormente. 
 docker stop <ID_DO_CONTAINER>
 ```
 
-O ID_DO_CONTAINER é o conjunto de letas e números mostrado na saída do comando anterior.
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step anterior.
