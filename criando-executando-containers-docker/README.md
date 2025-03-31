@@ -131,7 +131,7 @@ Nesta etapa, iremos parar a execução do container Docker criado anteriormente.
 docker stop <ID_DO_CONTAINER>
 ```
 
-O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step anterior.
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do [step 1.5](#step-15---listando-os-containers-em-execução).
 
 ## STEP 1.7 - Iniciando novamente o container
 
@@ -141,7 +141,7 @@ Nesta etapa, iremos iniciar o container que tinha sido parado no step anterior. 
 docker start <ID_DO_CONTAINER>
 ```
 
-O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step 1.5.
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step [step 1.5](#step-15---listando-os-containers-em-execução).
 
 Para testar o funcionamento do Nginx, em um navegador web (na mesma máquina), acesse: http://localhost:8080
 
@@ -153,7 +153,7 @@ Nesta etapa, iremos reiniciar o container. Para isso, em um terminal (ou Prompt 
 docker restart <ID_DO_CONTAINER>
 ```
 
-O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step 1.5.
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step [step 1.5](#step-15---listando-os-containers-em-execução).
 
 ## STEP 1.9 - Parando a execução do container
 
@@ -163,7 +163,7 @@ Agora, iremos novamente parar a execução do container. Para isso, em um termin
 docker stop <ID_DO_CONTAINER>
 ```
 
-O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step 1.5.
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step [step 1.5](#step-15---listando-os-containers-em-execução).
 
 ## STEP 1.10 - Deletando o container
 
@@ -173,4 +173,4 @@ Nesta etapa, iremos deletar o container. Para isso, em um terminal (ou Prompt de
 docker rm <ID_DO_CONTAINER>
 ```
 
-O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step 1.5.
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do [step 1.5](#step-15---listando-os-containers-em-execução).
