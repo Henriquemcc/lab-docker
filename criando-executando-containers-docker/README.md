@@ -163,7 +163,7 @@ Agora, iremos novamente parar a execução do container. Para isso, em um termin
 docker stop <ID_DO_CONTAINER>
 ```
 
-O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step anterior.
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step 1.5.
 
 ## STEP 1.10 - Deletando o container
 
