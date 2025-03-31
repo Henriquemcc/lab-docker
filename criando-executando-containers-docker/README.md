@@ -144,3 +144,13 @@ docker start <ID_DO_CONTAINER>
 O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step 1.5.
 
 Para testar o funcionamento do Nginx, em um navegador web (na mesma máquina), acesse: http://localhost:8080
+
+## STEP 1.8 - Reiniciando o container
+
+Nesta etapa, iremos reiniciar o container. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker restart <ID_DO_CONTAINER>
+```
+
+O ID_DO_CONTAINER é o conjunto de letas e números mostrado em baixo de ```CONTAINER ID``` da saída do comando do step 1.5.
