@@ -89,3 +89,5 @@ Ao executar este comando, será mostrada uma saída parecida com esta:
 Para testar o funcionamento do Nginx, em um navegador web (na mesma máquina), acesse: http://localhost:8080
 
 Caso o Nginx esteja executando corretamente, será exibida uma página com a mensagem: "Welcome to nginx!"
+
+Para terminar a execução, digite o comando: Control + C.
