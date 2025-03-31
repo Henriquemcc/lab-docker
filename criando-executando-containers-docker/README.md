@@ -44,3 +44,48 @@ docker.io/library/nginx:latest
 
 A imagem foi baixada do Docker Hub. Para mais informações sobre a imagem baixada, acesse: https://hub.docker.com/_/nginx
 
+## STEP 1.3 - Criando o container Docker
+
+Nesta próxima etapa, criaremos o container Docker, com a imagem baixada. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker run --interactive --tty --publish 80:8080 nginx
+```
+
+A opção ```--interactive``` (ou ```-i```) força o container executar de forma interativa.
+
+A opção ```--tty``` (ou ```-t```) aloca um pseudo tty.
+
+E a opção ```--publish``` (ou ```-p```) realiza o mapeamento das portas especificadas.
+
+Ao executar este comando, será mostrada uma saída parecida com esta:
+
+```
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2025/03/31 18:22:52 [notice] 1#1: using the "epoll" event method
+2025/03/31 18:22:52 [notice] 1#1: nginx/1.27.4
+2025/03/31 18:22:52 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/03/31 18:22:52 [notice] 1#1: OS: Linux 6.13.8-200.fc41.x86_64
+2025/03/31 18:22:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/31 18:22:52 [notice] 1#1: start worker processes
+2025/03/31 18:22:52 [notice] 1#1: start worker process 29
+2025/03/31 18:22:52 [notice] 1#1: start worker process 30
+2025/03/31 18:22:52 [notice] 1#1: start worker process 31
+2025/03/31 18:22:52 [notice] 1#1: start worker process 32
+2025/03/31 18:22:52 [notice] 1#1: start worker process 33
+2025/03/31 18:22:52 [notice] 1#1: start worker process 34
+2025/03/31 18:22:52 [notice] 1#1: start worker process 35
+2025/03/31 18:22:52 [notice] 1#1: start worker process 36
+```
+
+Para testar o funcionamento do Nginx, em um navegador web (na mesma máquina), acesse: http://localhost:8080
+
+Caso o Nginx esteja executando corretamente, será exibida uma página com a mensagem: "Welcome to nginx!"
