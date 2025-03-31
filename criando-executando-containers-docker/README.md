@@ -44,7 +44,7 @@ docker.io/library/nginx:latest
 
 A imagem foi baixada do Docker Hub. Para mais informações sobre a imagem baixada, acesse: https://hub.docker.com/_/nginx
 
-## STEP 1.3 - Criando o container Docker
+## STEP 1.3 - Criando e executando o container Docker
 
 Nesta próxima etapa, criaremos o container Docker, com a imagem baixada. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
