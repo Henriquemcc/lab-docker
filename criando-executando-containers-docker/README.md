@@ -24,7 +24,7 @@ Agora, iremos baixar a imagem do servidor web Nginx. Para isso, em um terminal (
 docker pull nginx
 ```
 
-Caso a imagem não tenha sido baixada, será mostrada a seguinte saída:
+Caso a imagem não tenha sido baixada, será mostrada uma saída parecida com esta:
 
 ```
 docker pull nginx
