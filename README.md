@@ -53,7 +53,7 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 
 ### STEP 1 - Comandos básicos do Docker
 
-[Comandos básicos do Docker](comandos-basicos/README.md)
+[Comandos básicos do Docker](documentacao/comandos-basicos/README.md)
 
 ### STEP 2 - Arquivos Docker Compose
 
