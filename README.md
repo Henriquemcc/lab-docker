@@ -58,9 +58,9 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 
 [Criando e Executando Containers Docker](criando-executando-containers-docker/README.md)
 
-### STEP 2 - Montando Volumes
+### STEP 2 - Montando Volumes e Definindo Variáveis de Ambiente
 
-[Montando Volumes](montando-volumes/README.md)
+[Montando Volumes e Definindo Variáveis de Ambiente](montando-volumes-definindo-variaveis-ambiente/README.md)
 
 ### STEP 3 - Criando Arquivos Docker Compose
 
