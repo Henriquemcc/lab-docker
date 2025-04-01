@@ -32,7 +32,9 @@ Status: Downloaded newer image for ghcr.io/coleifer/sqlite-web:latest
 ghcr.io/coleifer/sqlite-web:latest
 ```
 
-## STEP 2.3 - Criando e executando o sqlite-web (sem persistência)
+## STEP 2.3 - Testando o sqlite-web (sem persistência)
+
+### STEP 2.3.1 - Criando e executando o sqlite-web (sem persistência)
 
 Nesta próxima etapa, criaremos e executaremos o sqlite-web sem haver nenhuma persistência de dados. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -40,19 +42,19 @@ Nesta próxima etapa, criaremos e executaremos o sqlite-web sem haver nenhuma pe
 docker run --name sqliteweb --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
 ```
 
-## STEP 2.4 - Modificando o banco de dados
+## STEP 2.3.2 - Modificando o banco de dados
 
 Nesta etapa, iremos modificar o banco de dados. Para isso, em um navegador web (na mesma máquina), acesse: http://127.0.0.1:8080
 
-### STEP 2.4.1 - Criando Tabela
+### STEP 2.3.2.1 - Criando Tabela
 
 No canto superior direito, serão mostradas as opções: ```new_table_name``` com os botões ```create``` e ```query```. Em ```new_table_name``` digite ```usuario```, e clique em ```create```.
 
 <img src="../imagens/criacao-tabela-sqliteweb.png" alt="Captura de tela do canto superior direito do sqlite web, mostrando opção de criação de tabela.">
 
-### STEP 2.4.2 - Criando Colunas
+### STEP 2.3.2.2 - Criando Colunas
 
-#### STEP 2.4.2.1 - Criando Coluna 'usuario'
+#### STEP 2.3.2.2.1 - Criando Coluna 'usuario'
 
 No menu de navegação, serão mostradas as seguintes opções: ```Structure```, ```Content```, ```Query```, ```Insert```, ```Drop```, ```Import``` e ```Export```. Clique em ```Structure```.
 
@@ -62,7 +64,7 @@ Clique no botão ```Add column```, á direita de ```Columns```.
 
 No campo ```Column name```, digite ```usuario```. E em ```Column type```, selecione ```TEXT```. E clique ```Add column```.
 
-#### STEP 2.4.2.1 - Criando Coluna 'senha'
+#### STEP 2.3.2.2.2 - Criando Coluna 'senha'
 
 Repita o passo anterior, para a coluna 'senha'.
 
@@ -73,7 +75,7 @@ E no final teremos uma tabela com a seguinte estrutura:
 
 <img src="../imagens/estrutura-tabela-usuario-sqliteweb.png" alt="Captura de tela do menu Captura de tela do menu 'Structure' da tabela 'usuario' com a estrutura criada."/>
 
-## STEP 2.5 - Parando e deletando o container
+## STEP 2.3.3 - Parando e deletando o container
 
 Nesta etapa iremos parar e deletar o container Docker. Para isso, em um terminal (ou Prompt de Comando), digite os seguintes comandos:
 
@@ -85,7 +87,7 @@ docker stop sqliteweb
 docker rm sqliteweb
 ```
 
-## STEP 2.6 - Criando e executando novamente o sqlite-web
+## STEP 2.3.4 - Criando e executando novamente o sqlite-web
 
 Nesta próxima etapa, criaremos e executaremos novamente o sqlite-web. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -93,7 +95,7 @@ Nesta próxima etapa, criaremos e executaremos novamente o sqlite-web. Para isso
 docker run --name sqliteweb --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
 ```
 
-## STEP 2.7 - Acessando o banco de dados
+## STEP 2.3.5 - Acessando o banco de dados
 
 Nesta etapa, iremos acessar novamente o banco de dados. Para isso, em um navegador web (na mesma máquina), acesse: http://127.0.0.1:8080
 
