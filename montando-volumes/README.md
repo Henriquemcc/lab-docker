@@ -75,6 +75,23 @@ E no final teremos uma tabela com a seguinte estrutura:
 
 <img src="../imagens/estrutura-tabela-usuario-sqliteweb.png" alt="Captura de tela do menu Captura de tela do menu 'Structure' da tabela 'usuario' com a estrutura criada."/>
 
+### STEP 2.3.2.3 - Inserindo dados
+
+No menu de navegação, serão mostradas as seguintes opções: ```Structure```, ```Content```, ```Query```, ```Insert```, ```Drop```, ```Import``` e ```Export```. Clique em ```Insert```.
+
+No campo ```username```, digite: ```john.doe```. E no campo ```senha```, digite ```1234```.
+
+Repita esse passo para o usuário ```john.smith``` e a senha ```password```.
+
+E no final teremos uma tabela com a seguinte estrutura:
+
+| id   | username   | password   |
+|------|------------|------------|
+| 1    | john.doe   | 1234       |
+| 2    | john.smith | password   |
+
+
+
 ## STEP 2.3.3 - Parando e deletando o container
 
 Nesta etapa iremos parar e deletar o container Docker. Para isso, em um terminal (ou Prompt de Comando), digite os seguintes comandos:
