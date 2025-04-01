@@ -31,3 +31,11 @@ Digest: sha256:31e338c418777ade2afaaa1634e7fb96cf4ff310a1f77ee6fc9c59f22642dfaa
 Status: Downloaded newer image for ghcr.io/coleifer/sqlite-web:latest
 ghcr.io/coleifer/sqlite-web:latest
 ```
+
+## STEP 2.3 - Criando e executando o sqlite-web (sem persistência)
+
+Nesta próxima etapa, criaremos e executaremos o sqlite-web sem haver nenhuma persistência de dados. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker run --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
+```
