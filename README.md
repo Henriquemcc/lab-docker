@@ -62,15 +62,19 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 
 [Montando Volumes](montando-volumes/README.md)
 
-### STEP 3 - Criando Arquivos Docker Compose
+### STEP 3 - Passando Variáveis de Ambiente
+
+[Passando Variáveis de Ambiente](passando-variaveis-ambiente/README.md)
+
+### STEP 4 - Criando Arquivos Docker Compose
 
 [Criando Arquivos Docker Compose](criando-arquivos-docker-compose/README.md)
 
-### STEP 4 - Containerizando uma Aplicação
+### STEP 5 - Containerizando uma Aplicação
 
 [Containerizando uma aplicação](containerizando-uma-aplicacao/README.md)
 
-### STEP 5 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure
+### STEP 6 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure
 
 [Subindo uma imagem de container para a nuvem do Microsoft Azure](subindo-uma-imagem-container-nuvem-azure/README.md)
 
