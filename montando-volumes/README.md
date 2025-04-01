@@ -112,3 +112,52 @@ docker stop sqliteweb
 ```
 docker rm sqliteweb
 ```
+
+## STEP 2.4 - Testando o sqlite-web (com persistência)
+
+### STEP 2.4.1 - Criando e executando o sqlite-web (com persistência)
+
+Nesta próxima etapa, criaremos e executaremos o sqlite-web com persistência de dados. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker run --name sqliteweb --volume 'sqlitewebdata:/data' --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
+```
+
+## STEP 2.4.2 - Modificando o banco de dados
+
+Nesta etapa repetiremos o que foi feito no [STEP 2.3.2](#step-232---modificando-o-banco-de-dados).
+
+## STEP 2.4.3 - Parando e deletando o container
+
+Nesta etapa repetiremos o que foi feito no [STEP 2.3.3](#step-233---parando-e-deletando-o-container).
+
+## STEP 2.4.4 - Criando e executando novamente o sqlite-web
+
+Nesta próxima etapa, criaremos e executaremos novamente o sqlite-web. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker run --name sqliteweb --volume 'sqlitewebdata:/data' --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
+```
+
+## STEP 2.4.5 - Acessando o banco de dados
+
+Nesta etapa, iremos acessar novamente o banco de dados. Para isso, em um navegador web (na mesma máquina), acesse: http://127.0.0.1:8080
+
+Note que a tabela ```usuario``` continua existindo.
+
+## STEP 2.4.6 - Parando e apagando o container
+
+Nesta etapa repetiremos o que foi feito no [STEP 2.3.6](#step-236---parando-e-apagando-o-container).
+
+## STEP 2.4.7 - Deletando o volume
+
+Nesta etapa, iremos deletar o volume criado. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker volume rm sqlitewebdata 
+```
+
+E será mostrada a seguínte saída:
+```
+sqlitewebdata
+```
