@@ -84,3 +84,11 @@ docker stop sqliteweb
 ```
 docker rm sqliteweb
 ```
+
+## STEP 2.6 - Criando e executando novamente o sqlite-web
+
+Nesta próxima etapa, criaremos e executaremos novamente o sqlite-web. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker run --name sqliteweb --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
+```
