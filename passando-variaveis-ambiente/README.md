@@ -26,6 +26,10 @@ echo "$foo"
 
 E veremos a seguínte saída:
 
+```
+bar
+```
+
 Para sair do terminal do container, digite: Control + D.
 
 ## STEP 3.3 - Baixando a imagem do MySQL
