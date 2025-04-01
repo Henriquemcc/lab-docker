@@ -22,34 +22,4 @@ E para aplicações que demandassem outros containers, haveriam mais comandos pa
 
 Alguém poderia sugerir a criação de scripts shell para automatizar o deploy desses containers. O problema dessa solução é que ela seria difícil de manter, uma vez que cada programador tem a sua forma de escrever scripts, resultando na dificuldade da compreensão e da manutenibilidade.
 
-A solução para esse problema é a criação de arquivos declarativos no formato docker compose. Dessa forma comandos complexos como esses, poderiam ser representados de maneira mais simples da seguinte forma:
-
-```
-services:
-  wordpress:
-    image: wordpress:6.7.2-php8.1-apache
-    restart: always
-    ports:
-      - "8080:80"
-    environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: exampleuser
-      WORDPRESS_DB_PASSWORD: examplepass
-      WORDPRESS_DB_NAME: exampledb
-    volumes:
-      - wordpress:/var/www/html
-  db:
-    image: mysql:8.0
-    restart: always
-    environment:
-      MYSQL_DATABASE: exampledb
-      MYSQL_USER: exampleuser
-      MYSQL_PASSWORD: examplepass
-      MYSQL_RANDOM_ROOT_PASSWORD: '1'
-    volumes:
-      - db:/var/lib/mysql
-
-volumes:
-  wordpress:
-  db:
-```
+A solução para esse problema é a criação de arquivos declarativos no formato Docker Compose.
