@@ -58,15 +58,19 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 
 [Criando e Executando Containers Docker](criando-executando-containers-docker/README.md)
 
-### STEP 2 - Criando Arquivos Docker Compose
+### STEP 2 - Montando Volumes
+
+[Montando Volumes](montando-volumes/README.md)
+
+### STEP 3 - Criando Arquivos Docker Compose
 
 [Criando Arquivos Docker Compose](criando-arquivos-docker-compose/README.md)
 
-### STEP 3 - Containerizando uma Aplicação
+### STEP 4 - Containerizando uma Aplicação
 
 [Containerizando uma aplicação](containerizando-uma-aplicacao/README.md)
 
-### STEP 4 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure
+### STEP 5 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure
 
 [Subindo uma imagem de container para a nuvem do Microsoft Azure](subindo-uma-imagem-container-nuvem-azure/README.md)
 
