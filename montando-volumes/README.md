@@ -100,3 +100,15 @@ docker run --name sqliteweb --env SQLITE_DATABASE=db_filename.db --interactive -
 Nesta etapa, iremos acessar novamente o banco de dados. Para isso, em um navegador web (na mesma máquina), acesse: http://127.0.0.1:8080
 
 Note que não exite mais a tabela ```usuario```, ela foi deletada junto com o container sqlite-web.
+
+## STEP 2.3.6 - Parando e apagando o container
+
+Agora, iremos deletar o container. Para isso, em um terminal (ou Prompt de Comando), digite os seguintes comandos:
+
+```
+docker stop sqliteweb
+```
+
+```
+docker rm sqliteweb
+```
