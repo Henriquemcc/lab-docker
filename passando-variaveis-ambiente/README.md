@@ -26,6 +26,4 @@ echo "$foo"
 
 E veremos a seguínte saída:
 
-```
-bar
-```
+Para sair do terminal do container, digite: Control + D.
