@@ -1,6 +1,6 @@
 # Montando Volumes
 
-Neste STEP você aprenderá a montar volumes em containers Docker.
+Neste STEP você aprenderá a montar volumes em containers Docker. Para isso, utilizaremos a imagem do banco de dados sqlite-web.
 
 ## STEP 2.1 - O que são volumes?
 
