@@ -92,3 +92,9 @@ Nesta próxima etapa, criaremos e executaremos novamente o sqlite-web. Para isso
 ```
 docker run --name sqliteweb --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
 ```
+
+## STEP 2.7 - Acessando o banco de dados
+
+Nesta etapa, iremos acessar novamente o banco de dados. Para isso, em um navegador web (na mesma máquina), acesse: http://127.0.0.1:8080
+
+Note que não exite mais a tabela ```usuario```, ela foi deletada junto com o container sqlite-web.
