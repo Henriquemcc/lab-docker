@@ -37,7 +37,7 @@ ghcr.io/coleifer/sqlite-web:latest
 Nesta próxima etapa, criaremos e executaremos o sqlite-web sem haver nenhuma persistência de dados. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
 ```
-docker run --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
+docker run --name sqliteweb --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
 ```
 
 ## STEP 2.4 - Modificando o banco de dados
@@ -72,3 +72,15 @@ E no final teremos uma tabela com a seguinte estrutura:
 - ```senha``` como ```TEXT```.
 
 <img src="../imagens/estrutura-tabela-usuario-sqliteweb.png" alt="Captura de tela do menu Captura de tela do menu 'Structure' da tabela 'usuario' com a estrutura criada."/>
+
+## STEP 2.5 - Parando e deletando o container
+
+Nesta etapa iremos parar e deletar o container Docker. Para isso, em um terminal (ou Prompt de Comando), digite os seguintes comandos:
+
+```
+docker stop sqliteweb
+```
+
+```
+docker rm sqliteweb
+```
