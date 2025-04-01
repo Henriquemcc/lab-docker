@@ -39,3 +39,36 @@ Nesta próxima etapa, criaremos e executaremos o sqlite-web sem haver nenhuma pe
 ```
 docker run --env SQLITE_DATABASE=db_filename.db --interactive --tty --publish 8080:8080 ghcr.io/coleifer/sqlite-web:latest
 ```
+
+## STEP 2.4 - Modificando o banco de dados
+
+Nesta etapa, iremos modificar o banco de dados. Para isso, em um navegador web (na mesma máquina), acesse: http://127.0.0.1:8080
+
+### STEP 2.4.1 - Criando Tabela
+
+No canto superior direito, serão mostradas as opções: ```new_table_name``` com os botões ```create``` e ```query```. Em ```new_table_name``` digite ```usuario```, e clique em ```create```.
+
+<img src="../imagens/criacao-tabela-sqliteweb.png" alt="Captura de tela do canto superior direito do sqlite web, mostrando opção de criação de tabela.">
+
+### STEP 2.4.2 - Criando Colunas
+
+#### STEP 2.4.2.1 - Criando Coluna 'usuario'
+
+No menu de navegação, serão mostradas as seguintes opções: ```Structure```, ```Content```, ```Query```, ```Insert```, ```Drop```, ```Import``` e ```Export```. Clique em ```Structure```.
+
+Clique no botão ```Add column```, á direita de ```Columns```.
+
+<img src="../imagens/criacao-coluna-sqliteweb.png" alt="Captura de tela do menu 'Structure' da tabela 'usuario' com o título 'Coluna' á direita com o botão 'Add column'."/>
+
+No campo ```Column name```, digite ```usuario```. E em ```Column type```, selecione ```TEXT```. E clique ```Add column```.
+
+#### STEP 2.4.2.1 - Criando Coluna 'senha'
+
+Repita o passo anterior, para a coluna 'senha'.
+
+E no final teremos uma tabela com a seguinte estrutura:
+- ```id``` como ```INTEGER``` não nulo.
+- ```usuario``` como ```TEXT```.
+- ```senha``` como ```TEXT```.
+
+<img src="../imagens/estrutura-tabela-usuario-sqliteweb.png" alt="Captura de tela do menu Captura de tela do menu 'Structure' da tabela 'usuario' com a estrutura criada."/>
