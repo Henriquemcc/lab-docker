@@ -173,7 +173,7 @@ Nesta etapa repetiremos o que foi feito no [STEP 5.3.a.3](#step-53a3---expondo-p
 O arquivo ```Dockerfile``` ficará da seguinte forma:
 
 ```
-FROM debian:
+FROM debian:latest
 EXPOSE 8080
 ```
 
@@ -184,7 +184,7 @@ Nesta etapa repetiremos o que foi feito no [STEP 5.3.a.4](#step-53a4---definindo
 O arquivo ```Dockerfile``` ficará da seguinte forma:
 
 ```
-FROM debian:
+FROM debian:latest
 EXPOSE 8080
 WORKDIR /
 ```
@@ -217,7 +217,7 @@ Para que esses comandos possam ser executados pelo Docker, será necessário con
 O arquivo ```Dockerfile``` ficará da seguinte forma:
 
 ```
-FROM debian:
+FROM debian:latest
 EXPOSE 8080
 WORKDIR /
 RUN apt update
@@ -232,7 +232,7 @@ Nesta etapa repetiremos o que foi feito no [STEP 5.3.a.5](#step-53a5---copiando-
 O arquivo ```Dockerfile``` ficará da seguinte forma:
 
 ```
-FROM debian:
+FROM debian:latest
 EXPOSE 8080
 WORKDIR /
 RUN apt update
@@ -248,7 +248,7 @@ Nesta etapa repetiremos o que foi feito no [STEP 5.3.a.6](#step-53a6---definindo
 O arquivo ```Dockerfile``` ficará da seguinte forma:
 
 ```
-FROM debian:
+FROM debian:latest
 EXPOSE 8080
 WORKDIR /
 RUN apt update
