@@ -37,3 +37,9 @@ deno run --allow-net --allow-read ./main.ts
 Para testar o funcionamento da aplicação, em um navegador web (na mesma máquina), acesse: http://127.0.0.3:8080
 
 Com a aplicação aberta no navegador web, no menu de navegação, clique no link 'Café', e veja a página resultante.
+
+## STEP 5.3 - Criando o arquivo Dockerfile
+
+### STEP 5.3.1 - Criando novo arquivo
+
+Dentro da pasta aplicação, crie um arquivo com o nome ```Dockerfile```.
