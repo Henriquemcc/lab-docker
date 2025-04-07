@@ -72,3 +72,17 @@ O arquivo ```Dockerfile``` ficará da seguinte forma:
 FROM denoland/deno:2.2.8
 EXPOSE 8080
 ```
+
+### STEP 5.3.4 - Definindo o ambiente de trabalho
+
+Na imagem do container Docker, quando desejamos trocar de diretório no qual iremos trabalhar, devemos utilizar a instrução ```WORKDIR```. Ele deve ser seguido do caminho absoluto do diretório a ser alternado.
+
+No nosso exemplo, iremos trabalhar no diretório raís. Para isso, utilizaremos o comando ```WORKDIR``` seguido de ```/```.
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM denoland/deno:2.2.8
+EXPOSE 8080
+WORKDIR /
+```
