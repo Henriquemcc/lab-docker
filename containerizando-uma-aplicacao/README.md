@@ -57,3 +57,16 @@ FROM denoland/deno:2.2.8
 ```
 
 No momento do desenvolvimento deste lab, a última imagem do deno era ```2.2.8```. Caso deseja utilizar a última versão, substitua ```2.2.8``` por ```latest```.
+
+### STEP 5.3.3 - Expondo portas
+
+Para que o container Docker possa escutar por uma determinada porta, devemos expô-la. Para isso utilizaremos a instrução ```EXPOSE```.
+
+A nossa aplicação utiliza a porta ```8080```.
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM denoland/deno:2.2.8
+EXPOSE 8080
+```
