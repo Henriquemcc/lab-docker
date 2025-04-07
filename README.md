@@ -54,6 +54,10 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 
 ## Roadmap
 
+### STEP 0 - Introdução ao Docker
+
+[Introdução ao Docker](introducao/README.md)
+
 ### STEP 1 - Criando e Executando Containers Docker
 
 [Criando e Executando Containers Docker](criando-executando-containers-docker/README.md)
