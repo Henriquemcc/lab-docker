@@ -40,11 +40,13 @@ Com a aplicação aberta no navegador web, no menu de navegação, clique no lin
 
 ## STEP 5.3 - Criando o arquivo Dockerfile
 
-### STEP 5.3.1 - Criando novo arquivo
+### STEP 5.3.a - Método recomendado
+
+#### STEP 5.3.a.1 - Criando novo arquivo
 
 Dentro da pasta aplicação, crie um arquivo com o nome ```Dockerfile```.
 
-### STEP 5.3.2 - Escolhendo imagem base
+#### STEP 5.3.a.2 - Escolhendo imagem base
 
 Para construirmos a imagem da nossa aplicação, iremos utilizar uma imagem como base. Para isso, acessaremos o [Docker Hub](https://hub.docker.com/), e pesquisaremos por alguma imagem que possa servir como base.
 
@@ -60,7 +62,7 @@ FROM denoland/deno:2.2.8
 
 No momento do desenvolvimento deste lab, a última imagem do deno era ```2.2.8```. Caso deseja utilizar a última versão, substitua ```2.2.8``` por ```latest```.
 
-### STEP 5.3.3 - Expondo portas
+#### STEP 5.3.a.3 - Expondo portas
 
 Para que o container Docker possa escutar por uma determinada porta, devemos expô-la. Para isso utilizaremos a instrução ```EXPOSE```.
 
@@ -73,7 +75,7 @@ FROM denoland/deno:2.2.8
 EXPOSE 8080
 ```
 
-### STEP 5.3.4 - Definindo o ambiente de trabalho
+#### STEP 5.3.a.4 - Definindo o ambiente de trabalho
 
 Na imagem do container Docker, quando desejamos trocar de diretório no qual iremos trabalhar, devemos utilizar a instrução ```WORKDIR```. Ele deve ser seguido do caminho absoluto do diretório a ser alternado.
 
@@ -87,7 +89,7 @@ EXPOSE 8080
 WORKDIR /
 ```
 
-### STEP 5.3.5 - Copiando os arquivos
+#### STEP 5.3.a.5 - Copiando os arquivos
 
 Para podermos copiar os arquivos da nossa aplicação para dentro da imagem do container Docker, devemos utilizar os comandos ```ADD``` e/ou ```COPY```.
 
@@ -110,7 +112,7 @@ WORKDIR /
 COPY . .
 ```
 
-### STEP 5.3.6 - Definindo o comando a ser executado quando o container inicializar
+#### STEP 5.3.a.6 - Definindo o comando a ser executado quando o container inicializar
 
 Para podermos definir o comando a ser executado quando o container for inicializado, devemos utilizar a instrução ```CMD```.
 
