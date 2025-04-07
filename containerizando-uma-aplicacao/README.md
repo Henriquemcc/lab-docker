@@ -149,23 +149,24 @@ CMD ["/bin/deno", "run", "--allow-net", "--allow-read", "./main.ts"]
 Para construírmos a imagem a partir do Dockerfile, na pasta onde criamos o Dockerfile, em um terminal (ou Prompt de Comando), execute o seguinte comando:
 
 ```
-docker buildx build .
+docker buildx build --tag exemplo .
 ```
 
 E será mostrada uma saída parecida com esta:
 
 ```
-[+] Building 1.0s (7/7) FINISHED                                                                                                                                                                                    docker:rootless
+[+] Building 0.1s (7/7) FINISHED                                                                                                                                                                                    docker:rootless
  => [internal] load build definition from Dockerfile                                                                                                                                                                           0.0s
  => => transferring dockerfile: 279B                                                                                                                                                                                           0.0s
  => [internal] load metadata for docker.io/denoland/deno:2.2.8                                                                                                                                                                 0.0s
  => [internal] load .dockerignore                                                                                                                                                                                              0.0s
  => => transferring context: 2B                                                                                                                                                                                                0.0s
  => [internal] load build context                                                                                                                                                                                              0.0s
- => => transferring context: 824B                                                                                                                                                                                              0.0s
- => CACHED [1/3] FROM docker.io/denoland/deno:2.2.8                                                                                                                                                                            0.0s
- => [2/3] COPY . .                                                                                                                                                                                                             0.0s
- => exporting to image                                                                                                                                                                                                         0.9s
- => => exporting layers                                                                                                                                                                                                        0.8s
- => => writing image sha256:45e50a14890fb030423b6128a515b9ac5b9f7f9ae0273c3ef700f9de6383392f 
+ => => transferring context: 636B                                                                                                                                                                                              0.0s
+ => [1/3] FROM docker.io/denoland/deno:2.2.8                                                                                                                                                                                   0.0s
+ => CACHED [2/3] COPY . .                                                                                                                                                                                                      0.0s
+ => exporting to image                                                                                                                                                                                                         0.0s
+ => => exporting layers                                                                                                                                                                                                        0.0s
+ => => writing image sha256:45e50a14890fb030423b6128a515b9ac5b9f7f9ae0273c3ef700f9de6383392f                                                                                                                                   0.0s
+ => => naming to docker.io/library/exemplo 
 ```
