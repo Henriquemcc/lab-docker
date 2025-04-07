@@ -25,3 +25,15 @@ git clone https://github.com/webtech-network/lab-docker.git
 ### Baixando o arquivo zip da branch main
 
 Acesse o link: https://github.com/webtech-network/lab-docker/archive/refs/heads/main.zip, baixe e extraia o arquivo ```main.zip```.
+
+## STEP 5.2 - Executando a aplicação
+
+Na pasta [aplicacao](aplicacao), abra um terminal (ou Prompt de Comando) e digite o seguinte comando:
+
+```
+deno run --allow-net --allow-read ./main.ts
+```
+
+Para testar o funcionamento da aplicação, em um navegador web (na mesma máquina), acesse: http://127.0.0.3:8080
+
+Com a aplicação aberta no navegador web, no menu de navegação, clique no link 'Café', e veja a página resultante.
