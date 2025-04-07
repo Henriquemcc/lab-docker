@@ -156,6 +156,108 @@ Supondo que não existisse a imagem do Deno, e desejássemos containerizarmos es
 
 Nesta etapa repetiremos o que foi feito no [STEP 5.3.a.1](#step-53a1---criando-novo-arquivo).
 
+#### STEP 5.3.b.2 - Escolhendo imagem base
+
+Neste caso, utilizaremos a imagem base de uma distribuição Linux. Neste exemplo, utilizaremos a imagem do [Debian](https://hub.docker.com/_/debian).
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM debian:latest
+```
+
+#### STEP 5.3.b.3 - Expondo portas
+
+Nesta etapa repetiremos o que foi feito no [STEP 5.3.a.3](#step-53a3---expondo-portas).
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM debian:
+EXPOSE 8080
+```
+
+#### STEP 5.3.b.4 - Definindo o ambiente de trabalho
+
+Nesta etapa repetiremos o que foi feito no [STEP 5.3.a.4](#step-53a4---definindo-o-ambiente-de-trabalho).
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM debian:
+EXPOSE 8080
+WORKDIR /
+```
+
+#### STEP 5.3.b.5 - Instalando requisitos
+
+Para podermos instalar os requisitos, será necessário executar comandos no Docker. Para isso, a instrução ```RUN``` deve ser utilizada.
+
+Para instalarmos o Deno, devemos executar o seguinte comando, disponível no [site oficial](https://deno.com/):
+
+```
+curl -fsSL https://deno.land/install.sh | sh
+```
+
+Esse comando depende do comando ```curl``` estar instalado no sistema. Como o comando ```curl``` não vem instalado na imagem do Debian, será necessário instalá-lo por meio dos seguintes comandos:
+
+```
+apt update
+apt install -y curl
+```
+
+Para que esses comandos possam ser executados pelo Docker, será necessário converté-los para instruções do Docker. Os comandos serão convertidos da seguinte forma:
+
+```apt update``` -> ```RUN apt update```
+
+```apt install -y curl``` -> ```RUN apt install -y curl```
+
+```curl -fsSL https://deno.land/install.sh | sh``` -> ```RUN bash -c "curl -fsSL https://deno.land/install.sh | sh"```
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM debian:
+EXPOSE 8080
+WORKDIR /
+RUN apt update
+RUN apt install -y curl
+RUN bash -c "curl -fsSL https://deno.land/install.sh | sh"
+```
+
+#### STEP 5.3.b.6 - Copiando os arquivos
+
+Nesta etapa repetiremos o que foi feito no [STEP 5.3.a.5](#step-53a5---copiando-os-arquivos).
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM debian:
+EXPOSE 8080
+WORKDIR /
+RUN apt update
+RUN apt install -y curl
+RUN bash -c "curl -fsSL https://deno.land/install.sh | sh"
+COPY . .
+```
+
+#### STEP 5.3.b.7 - Definindo o comando a ser executado quando o container inicializar
+
+Nesta etapa repetiremos o que foi feito no [STEP 5.3.a.6](#step-53a6---definindo-o-comando-a-ser-executado-quando-o-container-inicializar).
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM debian:
+EXPOSE 8080
+WORKDIR /
+RUN apt update
+RUN apt install -y curl
+RUN bash -c "curl -fsSL https://deno.land/install.sh | sh"
+COPY . .
+CMD ["/bin/deno", "run", "--allow-net", "--allow-read", "./main.ts"]
+```
+
 ### STEP 5.4 - Construindo a imagem
 
 Para construírmos a imagem a partir do Dockerfile, na pasta onde criamos o Dockerfile, em um terminal (ou Prompt de Comando), execute o seguinte comando:
