@@ -199,18 +199,18 @@ Para instalarmos o Deno, devemos executar o seguinte comando, disponível no [si
 curl -fsSL https://deno.land/install.sh | sh
 ```
 
-Esse comando depende do comando ```curl``` estar instalado no sistema. Como o comando ```curl``` não vem instalado na imagem do Debian, será necessário instalá-lo por meio dos seguintes comandos:
+Esse comando depende dos comandos ```curl``` e ```unzip``` estarem instalados no sistema. Como os comandos ```curl``` e ```unzip``` não vem instalados na imagem do Debian, será necessário instalá-los por meio dos seguintes comandos:
 
 ```
 apt update
-apt install -y curl
+apt install -y curl unzip
 ```
 
 Para que esses comandos possam ser executados pelo Docker, será necessário converté-los para instruções do Docker. Os comandos serão convertidos da seguinte forma:
 
 ```apt update``` -> ```RUN apt update```
 
-```apt install -y curl``` -> ```RUN apt install -y curl```
+```apt install -y curl unzip``` -> ```RUN apt install -y curl unzip```
 
 ```curl -fsSL https://deno.land/install.sh | sh``` -> ```RUN bash -c "curl -fsSL https://deno.land/install.sh | sh"```
 
@@ -221,7 +221,7 @@ FROM debian:latest
 EXPOSE 8080
 WORKDIR /
 RUN apt update
-RUN apt install -y curl
+RUN apt install -y curl unzip
 RUN bash -c "curl -fsSL https://deno.land/install.sh | sh"
 ```
 
@@ -236,7 +236,7 @@ FROM debian:latest
 EXPOSE 8080
 WORKDIR /
 RUN apt update
-RUN apt install -y curl
+RUN apt install -y curl unzip
 RUN bash -c "curl -fsSL https://deno.land/install.sh | sh"
 COPY . .
 ```
@@ -252,7 +252,7 @@ FROM debian:latest
 EXPOSE 8080
 WORKDIR /
 RUN apt update
-RUN apt install -y curl
+RUN apt install -y curl unzip
 RUN bash -c "curl -fsSL https://deno.land/install.sh | sh"
 COPY . .
 CMD ["/bin/deno", "run", "--allow-net", "--allow-read", "./main.ts"]
