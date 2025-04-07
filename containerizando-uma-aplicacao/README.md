@@ -86,3 +86,26 @@ FROM denoland/deno:2.2.8
 EXPOSE 8080
 WORKDIR /
 ```
+
+### STEP 5.3.5 - Copiando os arquivos
+
+Para podermos copiar os arquivos da nossa aplicação para dentro da imagem do container Docker, devemos utilizar os comandos ```ADD``` e/ou ```COPY```.
+
+A instrução ```COPY``` permite copiar arquivos locais para dentro da imagem do container.
+
+Já a instrução ```ADD``` permite adicionar arquivos tanto locais como remotos para dentro da imagem do container.
+
+Para mais informações sobre a diferença entre essas instruções, acesse: https://docs.docker.com/build/building/best-practices/#add-or-copy
+
+No nosso exemplo utilizaremos somente a instrução ```COPY```.
+
+Para copiarmos todos os arquivos da pasta atual para dentro da imagem do container, o comando copy deve ser seguido de ```. .``` (pontos separados por espaço).
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM denoland/deno:2.2.8
+EXPOSE 8080
+WORKDIR /
+COPY . .
+```
