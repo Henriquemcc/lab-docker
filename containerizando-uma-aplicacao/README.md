@@ -323,3 +323,12 @@ docker run -it -p 8080:8080 exemplo
 Para testar o funcionamento da aplicação, em um navegador web (na mesma máquina), acesse: http://127.0.0.4:8080
 
 Para terminar a execução, digite o comando: Control + C.
+
+### STEP 5.7 - Parando e Deletando todos os Containers
+
+Nesta etapa, iremos parar e deletar todos os containers. Para isso, em um terminal (ou Prompt de Comando), digite os seguintes comandos:
+
+```
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+```
