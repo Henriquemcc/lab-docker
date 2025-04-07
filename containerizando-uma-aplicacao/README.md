@@ -255,7 +255,7 @@ RUN apt update
 RUN apt install -y curl unzip
 RUN bash -c "curl -fsSL https://deno.land/install.sh | sh"
 COPY . .
-CMD ["/bin/deno", "run", "--allow-net", "--allow-read", "./main.ts"]
+CMD ["/root/.deno/bin/deno", "run", "--allow-net", "--allow-read", "./main.ts"]
 ```
 
 ### STEP 5.4 - Construindo a imagem
