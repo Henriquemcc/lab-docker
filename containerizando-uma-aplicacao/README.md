@@ -46,9 +46,11 @@ Dentro da pasta aplicação, crie um arquivo com o nome ```Dockerfile```.
 
 ### STEP 5.3.2 - Escolhendo imagem base
 
-Para construirmos a imagem da nossa aplicação, iremos utilizar uma imagem como base. Para isso, acessaremos o [Docker Hub](https://hub.docker.com/), e pesquisaremos por uma imagem que possa servir como base
+Para construirmos a imagem da nossa aplicação, iremos utilizar uma imagem como base. Para isso, acessaremos o [Docker Hub](https://hub.docker.com/), e pesquisaremos por alguma imagem que possa servir como base.
 
-Como a nossa aplicação foi desenvolvida para Deno, uma opção é utilizarmos a [imagem oficial do Deno](https://hub.docker.com/r/denoland/deno).
+Como a nossa aplicação foi desenvolvida para Deno, uma opção mais adequada é utilizarmos a [imagem oficial do Deno](https://hub.docker.com/r/denoland/deno).
+
+Para que o Docker crie a nossa imagem com base em outra, utilizamos a instrução ```FROM```.
 
 O arquivo ```Dockerfile``` ficará da seguinte forma:
 
