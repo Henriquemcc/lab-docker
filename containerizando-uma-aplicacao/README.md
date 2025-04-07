@@ -109,3 +109,37 @@ EXPOSE 8080
 WORKDIR /
 COPY . .
 ```
+
+### STEP 5.3.6 - Definindo o comando a ser executado quando o container inicializar
+
+Para podermos definir o comando a ser executado quando o container for inicializado, devemos utilizar a instrução ```CMD```.
+
+Na nossa aplicação, o comando a ser executado é:
+
+```
+deno run --allow-net --allow-read ./main.ts
+```
+
+```deno``` é o nome do executável.
+
+```run --allow-net --allow-read ./main.ts``` são os argumentos passados a ele.
+
+Como o executável ```deno``` está localizado na pasta ```/bin```, devemos utilizar ```/bin/deno```.
+
+E para cada argumento separado por parâmetro, devemos transformár-los em strings separadas por vírgula: ```"run", "--allow-net", "--allow-read", "/main.ts"```.
+
+Dessa forma, a instrução ficará:
+
+```
+CMD ["/bin/deno", "run", "--allow-net", "--allow-read", "./main.ts"]
+```
+
+E o arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM denoland/deno:2.2.8
+EXPOSE 8080
+WORKDIR /
+COPY . .
+CMD ["/bin/deno", "run", "--allow-net", "--allow-read", "./main.ts"]
+```
