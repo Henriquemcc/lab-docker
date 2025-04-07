@@ -146,6 +146,10 @@ COPY . .
 CMD ["/bin/deno", "run", "--allow-net", "--allow-read", "./main.ts"]
 ```
 
+### STEP 5.3.b - Método Alternativo
+
+Supondo que não existisse a imagem do Deno, e desejássemos containerizarmos essa aplicação. Neste método, mostraremos uma forma alternativa de containerizarmos essa aplicação.
+
 ### STEP 5.4 - Construindo a imagem
 
 Para construírmos a imagem a partir do Dockerfile, na pasta onde criamos o Dockerfile, em um terminal (ou Prompt de Comando), execute o seguinte comando:
