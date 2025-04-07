@@ -43,3 +43,17 @@ Com a aplicação aberta no navegador web, no menu de navegação, clique no lin
 ### STEP 5.3.1 - Criando novo arquivo
 
 Dentro da pasta aplicação, crie um arquivo com o nome ```Dockerfile```.
+
+### STEP 5.3.2 - Escolhendo imagem base
+
+Para construirmos a imagem da nossa aplicação, iremos utilizar uma imagem como base. Para isso, acessaremos o [Docker Hub](https://hub.docker.com/), e pesquisaremos por uma imagem que possa servir como base
+
+Como a nossa aplicação foi desenvolvida para Deno, uma opção é utilizarmos a [imagem oficial do Deno](https://hub.docker.com/r/denoland/deno).
+
+O arquivo ```Dockerfile``` ficará da seguinte forma:
+
+```
+FROM denoland/deno:2.2.8
+```
+
+No momento do desenvolvimento deste lab, a última imagem do deno era ```2.2.8```. Caso deseja utilizar a última versão, substitua ```2.2.8``` por ```latest```.
