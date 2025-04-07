@@ -309,3 +309,17 @@ redis                 latest                     ad4b31aa2de6   3 months ago    
 Nesta saída é possível ver todas as imagens Docker armazenadas localmente, incluindo as imagens que foram baixadas com o comando ```docker pull```.
 
 Caso existe uma imagem com o ```REPOSITORY``` com o nome igual á ```exemplo```, isso indica que a imagem foi criada com sucesso.
+
+### STEP 5.6 - Criando e Executando Container
+
+Para testarmos o funcionamento da imagem de container criada, iremos criar e executar um container Docker com a imagem criada.
+
+Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker run -it -p 8080:8080 exemplo
+```
+
+Para testar o funcionamento da aplicação, em um navegador web (na mesma máquina), acesse: http://127.0.0.4:8080
+
+Para terminar a execução, digite o comando: Control + C.
