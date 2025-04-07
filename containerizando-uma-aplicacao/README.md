@@ -332,3 +332,7 @@ Nesta etapa, iremos parar e deletar todos os containers. Para isso, em um termin
 docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
 ```
+
+A opção ```-a``` (dentro de ```$(docker ps -aq)```) mostra todos os containers, incluindo os que não estão em execução.
+
+E a opção ```-q``` (dentro de ```$(docker ps -aq)```) exibe apenas os IDs dos containers em execução.
