@@ -42,6 +42,8 @@ Com a aplicação aberta no navegador web, no menu de navegação, clique no lin
 
 ### STEP 5.3.a - Método recomendado
 
+Neste método, será demonstrado a forma recomendada de containerizarmos uma aplicação Deno.
+
 #### STEP 5.3.a.1 - Criando novo arquivo
 
 Dentro da pasta aplicação, crie um arquivo com o nome ```Dockerfile```.
