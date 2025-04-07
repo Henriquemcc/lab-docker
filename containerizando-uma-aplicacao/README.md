@@ -170,3 +170,28 @@ E será mostrada uma saída parecida com esta:
  => => writing image sha256:45e50a14890fb030423b6128a515b9ac5b9f7f9ae0273c3ef700f9de6383392f                                                                                                                                   0.0s
  => => naming to docker.io/library/exemplo 
 ```
+
+### STEP 5.5 - Listando imagens
+
+Para verificarmos que a imagem foi criada, iremos realizar a listagem de todas as imagens. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+docker image ls
+```
+
+E será exibida uma saída parecida com esta:
+
+```
+REPOSITORY            TAG                        IMAGE ID       CREATED          SIZE
+exemplo               latest                     45e50a14890f   7 minutes ago    178MB
+denoland/deno         2.2.8                      964e12a68fbb   2 days ago       178MB
+denoland/deno         latest                     964e12a68fbb   2 days ago       178MB
+wordpress             6.7.2-php8.1-apache        70b8089f02c3   7 weeks ago      700MB
+mysql                 8.0                        1c83f38450c3   2 months ago     764MB
+redis                 7.4.2                      ad4b31aa2de6   3 months ago     117MB
+redis                 latest                     ad4b31aa2de6   3 months ago     117MB
+```
+
+Nesta saída é possível ver todas as imagens Docker armazenadas localmente, incluindo as imagens que foram baixadas com o comando ```docker pull```.
+
+Caso existe uma imagem com o ```REPOSITORY``` com o nome igual á ```exemplo```, isso indica que a imagem foi criada com sucesso.
