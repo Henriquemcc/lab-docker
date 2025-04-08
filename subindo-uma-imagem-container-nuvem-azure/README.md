@@ -45,11 +45,17 @@ E depois, clique em no botão 'Create', no canto inferior esquerdo.
 
 <img src="../imagens/registry-criado-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o 'Container Registry' criado.">
 
-### STEP 6.2.3 - Instalando o Azure CLI
+### STEP 6.2.3 - Adicionando acesso de administrador ao Container Registry
+
+No 'Container Registry' criado, clique em 'Settings' e em 'Access Keys'.
+
+Marque a caixa de seleção ```Admin user```.
+
+### STEP 6.2.4 - Instalando o Azure CLI
 
 Instale o Azure CLI em sua máquina. Siga os passos do tutorial oficial da Microsoft: https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli
 
-### STEP 6.2.4 - Faça login no Azure CLI
+### STEP 6.2.5 - Faça login no Azure CLI
 
 Agora iremos realizar login no Azure CLI. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -59,7 +65,7 @@ az login
 
 Uma janela no navegador web se abrirá, e será exibida a opção para entrar em sua conta da Azure.
 
-### STEP 6.2.5 - Faça login no Azure Container Registry
+### STEP 6.2.6 - Faça login no Azure Container Registry
 
 Para realizarmos login no Azure Container Registry, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -69,7 +75,7 @@ az acr login --name exemplo
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
-### STEP 6.2.6 - Crie uma tag para a imagem
+### STEP 6.2.7 - Crie uma tag para a imagem
 
 Para que o Docker possa vincular a imagem criada ao container, é necessário a criação de uma tag. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -79,7 +85,7 @@ docker tag exemplo:latest exemplo.azurecr.io/exemplo_imagem
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
-### STEP 6.2.7 - Enviando a imagem ao container registry
+### STEP 6.2.8 - Enviando a imagem ao container registry
 
 Para enviarmos a imagem criada ao container registry, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -89,7 +95,7 @@ docker push exemplo.azurecr.io/exemplo_imagem:latest
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
-### STEP 6.2.8 - Criando novo Container
+### STEP 6.2.9 - Criando novo Container
 
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container instances```, e clique na opção 'Container instances'.
 
