@@ -68,3 +68,11 @@ az acr login --name exemplo
 ```
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
+
+### STEP 6.2.6 - Crie uma tag para a imagem
+
+Para que o Docker possa vincular a imagem criada ao container, é necessário a criação de uma tag. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+    docker tag exemplo:latest exemplo.azurecr.io/exemplo_imagem
+```
