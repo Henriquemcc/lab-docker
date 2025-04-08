@@ -49,9 +49,10 @@ Instale o Azure CLI em sua máquina. Siga os passos do tutorial oficial da Micro
 
 ### STEP 6.2.4 - Faça login no Azure CLI
 
-Agora iremos realizar login no Azure CLI. Para isso, em um terminal (ou Prompt de Comando), digite os seguintes comandos:
+Agora iremos realizar login no Azure CLI. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
 ```
 az login
-az acr login --name exemplo
 ```
+
+Uma janela no navegador web se abrirá, e será exibida a opção para entrar em sua conta da Azure.
