@@ -42,3 +42,7 @@ E depois, clique em no botão 'Create', no canto inferior esquerdo.
 <img src="../imagens/your-deployment-is-complete-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando a mensagem 'Your Deployment is Complete'. No canto inferior esquerdo existe o botão 'Go to Resource', que está contornado, indicando que deve ser clicado.">
 
 <img src="../imagens/registry-criado-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o 'Container Registry' criado.">
+
+### STEP 6.2.3 - Instalando o Azure CLI
+
+Instale o Azure CLI em sua máquina. Siga os passos do tutorial oficial da Microsoft: https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli
