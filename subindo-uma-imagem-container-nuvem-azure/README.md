@@ -95,4 +95,4 @@ No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa
 
 <img src="../imagens/pesquisar-container-registries-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o resultado da pesquisa por 'Container instances'. As opções que aparecem são: 'Container instances', 'BareMetal Instances', 'Container Apps' e 'Instance pools'. A opção 'Container instances' está contornada de uma moldura vermelha, indicando que esta deve ser selecionada.">
 
-<img src="../imagens/criar-container-instance-azure.png">
+<img src="../imagens/criar-container-instance-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o menu 'Container instances', com o botão 'Create' (no canto superior esquerdo) contornado, indicando que ele deverá ser clicado.">
