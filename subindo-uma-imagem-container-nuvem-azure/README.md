@@ -20,6 +20,21 @@ No menu 'Container Registries', clique no botão 'Create'.
 
 <img src="../imagens/criar-container-registry-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o menu 'Container Registries', com o botão 'Create' (no canto superior esquerdo) contornado, indicando que ele deverá ser clicado.">
 
-<img src="../imagens/criar-container-registry-basic.png" alt="Captura de tela do console do Microsoft Azure, mostrando a aba 'Basics' do menu de criação de 'Container Registry'. Nela é mostrado os seguintes campos: 'Subscriptions': 'Azure for Students', 'Resource": '(New) Exemplo', 'Registry name': 'exemplo', 'Location': 'North Central US', 'Use availability zones': Desmarcado, 'Pricing Plan': 'Standard'.>
+Na aba basics, nos campos (em 1, na imagem abaixo), deixe da seguinte forma:
+
+| Opção                  | Valor                |
+|------------------------|----------------------|
+| Subscription           | 'Azure for Students' |
+| Resource group         | '(New) Exemplo'      |
+| Registry name          | 'exemplo'            |
+| Location               | 'North Central US'   |
+| Use availability zones | Desmarcado           |
+| Pricing plan           | 'Standard'           |
+
+Depois, clique na aba 'Review + Create' (em 2, na imagem abaixo).
+
+<img src="../imagens/criar-container-registry-basic.png" alt="Captura de tela do console do Microsoft Azure, mostrando a aba 'Basics' do menu de criação de 'Container Registry'. Nela é mostrado os seguintes campos: 'Subscriptions': 'Azure for Students', 'Resource': '(New) Exemplo', 'Registry name': 'exemplo', 'Location': 'North Central US', 'Use availability zones': Desmarcado, 'Pricing Plan': 'Standard'.">
+
+E depois, clique em no botão 'Create', no canto inferior esquerdo.
 
 <img src="../imagens/criar-container-registry-review-create.png" alt="Captura de tela do console do Microsoft Azure, mostrando a aba 'Review + create' do menu de criação do 'Container Registry'. Nele é mostrada as seguintes informações: 'Registry name': 'exemplo', 'Subscription: 'Azure for Students', 'Resource Group': 'Exemplo', 'Location': 'North Central US', 'Availability zones': 'Disabled', 'Pricing plan': 'Standard', 'Public network access': 'Yes', 'Customer-Managed Key': 'Disabled, 'Identity': 'None', 'Key Vault': 'None', 'Encryption key': 'None', 'Version': 'None'.">
