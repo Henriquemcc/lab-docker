@@ -46,3 +46,12 @@ E depois, clique em no botão 'Create', no canto inferior esquerdo.
 ### STEP 6.2.3 - Instalando o Azure CLI
 
 Instale o Azure CLI em sua máquina. Siga os passos do tutorial oficial da Microsoft: https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli
+
+### STEP 6.2.4 - Faça login no Azure CLI
+
+Agora iremos realizar login no Azure CLI. Para isso, em um terminal (ou Prompt de Comando), digite os seguintes comandos:
+
+```
+az login
+az acr login --name exemplo
+```
