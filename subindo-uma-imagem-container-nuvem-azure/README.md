@@ -38,3 +38,7 @@ Depois, clique na aba 'Review + Create' (em 2, na imagem abaixo).
 E depois, clique em no botão 'Create', no canto inferior esquerdo.
 
 <img src="../imagens/criar-container-registry-review-create.png" alt="Captura de tela do console do Microsoft Azure, mostrando a aba 'Review + create' do menu de criação do 'Container Registry'. Nele é mostrada as seguintes informações: 'Registry name': 'exemplo', 'Subscription: 'Azure for Students', 'Resource Group': 'Exemplo', 'Location': 'North Central US', 'Availability zones': 'Disabled', 'Pricing plan': 'Standard', 'Public network access': 'Yes', 'Customer-Managed Key': 'Disabled, 'Identity': 'None', 'Key Vault': 'None', 'Encryption key': 'None', 'Version': 'None'.">
+
+<img src="../imagens/your-deployment-is-complete-azure.png">
+
+<img src="../imagens/registry-criado-azure.png">
