@@ -31,6 +31,8 @@ Na aba basics, nos campos (em 1, na imagem abaixo), deixe da seguinte forma:
 | Use availability zones | Desmarcado           |
 | Pricing plan           | 'Standard'           |
 
+O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
+
 Depois, clique na aba 'Review + Create' (em 2, na imagem abaixo).
 
 <img src="../imagens/criar-container-registry-basic.png" alt="Captura de tela do console do Microsoft Azure, mostrando a aba 'Basics' do menu de criação de 'Container Registry'. Nela é mostrado os seguintes campos: 'Subscriptions': 'Azure for Students', 'Resource': '(New) Exemplo', 'Registry name': 'exemplo', 'Location': 'North Central US', 'Use availability zones': Desmarcado, 'Pricing Plan': 'Standard'.">
@@ -64,3 +66,5 @@ Para realizarmos login no Azure Container Registry, em um terminal (ou Prompt de
 ```
 az acr login --name exemplo
 ```
+
+O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
