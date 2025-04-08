@@ -77,6 +77,8 @@ Para que o Docker possa vincular a imagem criada ao container, é necessário a 
 docker tag exemplo:latest exemplo.azurecr.io/exemplo_imagem
 ```
 
+O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
+
 ### STEP 6.2.7 - Enviando a imagem ao container registry
 
 Para enviarmos a imagem criada ao container registry, em um terminal (ou Prompt de Comando), digite o seguinte comando:
@@ -84,6 +86,8 @@ Para enviarmos a imagem criada ao container registry, em um terminal (ou Prompt 
 ```
 docker push exemplo.azurecr.io/exemplo_imagem:latest
 ```
+
+O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
 ### STEP 6.2.8 - Criando novo Container
 
