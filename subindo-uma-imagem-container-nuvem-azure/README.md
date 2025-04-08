@@ -56,3 +56,11 @@ az login
 ```
 
 Uma janela no navegador web se abrirá, e será exibida a opção para entrar em sua conta da Azure.
+
+### STEP 6.2.5 - Faça login no Azure Container Registry
+
+Para realizarmos login no Azure Container Registry, em um terminal (ou Prompt de Comando), digite o seguinte comando:
+
+```
+az acr login --name exemplo
+```
