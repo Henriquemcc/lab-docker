@@ -139,7 +139,7 @@ Na aba 'Networking', em 'DNS name labeling', defina um nome de domínio de sua p
 
 Depois, clique no botão 'Review + Create'.
 
-<img src="../imagens/criar-container-instance-networking.png">
+<img src="../imagens/criar-container-instance-networking.png" alt="Captura de tela do console do Microsoft Azure, mostrando a aba 'Networking' do menu de criação de 'Container Instance'. Nele é mostrada as seguíntes opções: 'Networking Type': 'Public', 'DNS name label': 'exemplo' e 'DNS name label scope reuse': 'Tenant'. E embaixo os botões 'Review + Create', 'Previous' e 'Next: Monitoring'. O 'Review + Create' está marcado com uma moldura vermelha.">
 
 Verifique se as configurações estão corretas, e clique em 'Create'. 
 
