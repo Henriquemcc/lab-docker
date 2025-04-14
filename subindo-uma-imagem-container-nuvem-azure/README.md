@@ -113,9 +113,23 @@ No menu 'Container instances', clique no botão 'Create'.
 
 Na aba basics, nos campos (em 1, na imagem abaixo), deixe da seguinte forma:
 
-| Opção | Valor |
-|-------|-------|
- |       |       |
+| Opção                        | Valor                            |
+|------------------------------|----------------------------------|
+| Subscription                 | 'Azure for Students'             |
+| Resource group               | '(New) Exemplo'                  |
+| Container name               | 'Exemplo'                        |
+| Region                       | '(US) North Central US           |
+| Availability zones (Preview) | None                             |
+| SKU                          | 'Standard'                       |
+| Image source                 | 'Azure Container Registry'       |
+| Run with Azure Spot discount | Desmarcado                       |
+| Registry                     | 'exemplo'                        |
+| Image                        | 'exemplo_imagem'                 |
+| Image tag                    | 'latest'                         |
+| OS Type                      | 'Linux'                          |
+| Size                         | '1 vcpu, 1.5 GiB memory, 0 gpus' |
+
+O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
 Depois, clique no botão 'Next: Networking'.
 
