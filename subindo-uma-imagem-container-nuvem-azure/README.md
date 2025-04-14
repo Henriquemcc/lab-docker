@@ -133,7 +133,7 @@ O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container
 
 Depois, clique no botão 'Next: Networking'.
 
-<img src="../imagens/criar-container-instance-basic.png">
+<img src="../imagens/criar-container-instance-basic.png" alt="Captura de tela do console do Microsoft Azure, mostrando a aba 'Basics' do menu de criação de 'Container Instance'. Nele é mostrada as seguintes informações: 'Subscription': 'Azure for Students', 'Resource group': '(New) Exemplo', 'Container name': 'Exemplo', 'Region': '(US) North Central US', 'Availability zones (Preview)': 'None', 'SKU': 'Standard', 'Image source': 'Azure Container Registry', 'Run with Azure Spot discount': Desmarcado, 'Registry': 'exemplo', 'Image': 'exemplo_imagem', 'Image tag': 'latest', 'OS Type': 'Linux', 'Size': '1 vcpu, 1.5 GiB memory, 0 gpus'. Essas opções estão contornadas por uma moldura vermelha seguida do número 1. E embaixo, os botões 'Review + create', 'Previous' e 'Next: Networking'. O 'Next: Networking' está marcado com uma moldura vermelha, seguido do número 2.">
 
 Na aba 'Networking', em 'DNS name labeling', defina um nome de domínio de sua preferência.
 
