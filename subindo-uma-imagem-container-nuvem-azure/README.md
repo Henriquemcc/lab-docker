@@ -117,7 +117,7 @@ Na aba basics, nos campos (em 1, na imagem abaixo), deixe da seguinte forma:
 |------------------------------|----------------------------------|
 | Subscription                 | 'Azure for Students'             |
 | Resource group               | 'Exemplo'                        |
-| Container name               | 'Exemplo'                        |
+| Container name               | 'exemplo'                        |
 | Region                       | '(US) North Central US           |
 | Availability zones (Preview) | None                             |
 | SKU                          | 'Standard'                       |
@@ -129,7 +129,9 @@ Na aba basics, nos campos (em 1, na imagem abaixo), deixe da seguinte forma:
 | OS Type                      | 'Linux'                          |
 | Size                         | '1 vcpu, 1.5 GiB memory, 0 gpus' |
 
-O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
+O 'Registry name ```exemplo``` deve ser substituído pelo nome do seu container registry.
+
+O Resource group ```Exemplo``` deve ser substituído pelo nome do resource group criado junto com o 'Container Registry'.
 
 Depois, clique no botão 'Next: Networking'.
 
