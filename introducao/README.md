@@ -19,3 +19,9 @@ O funcionamento de máquinas virtuais depende de um Hypervisor, que é um softwa
 A título de curiosidade, existem diferentes softwares que permitem rodar máquinas virtuais no seu computador: [Oracle VM VirtualBox](https://www.virtualbox.org/), [VMware Workstation](https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html), [QEMU](https://www.qemu.org/). A criação, utilização e gerenciamento de máquinas virtuais está fora do escopo deste laboratório.
 
 O principal problema das máquinas virtuais é que elas consomem muitos recursos, são lentas para inicializar e difíceis de serem gerenciadas em larga escala.
+
+## STEP 0.3 - Docker
+
+O Docker surgiu como uma alternativa muito mais leve, muito mais eficiente e portátil em relação às máquinas virtuais. Ao invés de virtualizar o sistema operacional inteiro, o Docker utiliza o conceito de **containers**, que compartilham o mesmo Kernel do sistema operacional, mas que funcionam de forma isolada uns dos outros.
+
+Dessa forma, através do Docker é possível containerizarmos uma aplicação com todas as suas dependências necessárias para rodar, permitindo que ela seja executada em qualquer lugar, seja no computador do desenvolvedor, no servidor de testes, no servidor de produção ou mesmo na nuvem.
