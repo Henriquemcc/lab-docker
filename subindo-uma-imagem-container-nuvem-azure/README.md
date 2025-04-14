@@ -107,10 +107,26 @@ No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa
 
 <img src="../imagens/pesquisar-container-registries-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o resultado da pesquisa por 'Container instances'. As opções que aparecem são: 'Container instances', 'BareMetal Instances', 'Container Apps' e 'Instance pools'. A opção 'Container instances' está contornada de uma moldura vermelha, indicando que esta deve ser selecionada.">
 
+No menu 'Container instances', clique no botão 'Create'.
+
 <img src="../imagens/criar-container-instance-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o menu 'Container instances', com o botão 'Create' (no canto superior esquerdo) contornado, indicando que ele deverá ser clicado.">
+
+Na aba basics, nos campos (em 1, na imagem abaixo), deixe da seguinte forma:
+
+| Opção | Valor |
+|-------|-------|
+ |       |       |
+
+Depois, clique no botão 'Next: Networking'.
 
 <img src="../imagens/criar-container-instance-basic.png">
 
+Na aba 'Networking', em 'DNS name labeling', defina um nome de domínio de sua preferência.
+
+Depois, clique no botão 'Review + Create'.
+
 <img src="../imagens/criar-container-instance-networking.png">
+
+Verifique se as configurações estão corretas, e clique em 'Create'. 
 
 <img src="../imagens/criar-container-instance-review-create.png">
