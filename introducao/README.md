@@ -9,3 +9,13 @@ No desenvolvimento de aplicações é comum enfrentarmos o desafio de que a apli
 > "Na minha máquina funciona!"
  
 Outra dificuldade encontrada é a dificuldade de manter e configurar ambientes para diferentes serviços, como banco de dados, servidores web, aplicações backend. Isso torna-se ainda mais complicado quando existe a necessidade de escalar as aplicações ou gerenciar múltiplas versões e dependências.
+
+## STEP 0.2 - Máquinas Virtuais
+
+Antes do Docker ser criado, a solução utilizada era o uso de máquinas virtuais. Dessa forma, cada aplicação era isolada em uma máquina virtual, de modo que todas as dependências e bibliotecas dessa máquina fossem instaladas e todas as configurações definidas, garantindo a correta execução da aplicação.
+
+O funcionamento de máquinas virtuais depende de um Hypervisor, que é um software que permite a criação e execução de máquinas virtuais, que possibilita que a máquina hospedeira (_host_) rode várias máquinas convidadas (_guest_) em um mesmo hardware. Existem dois tipos de Hypervisors: Bare Metal e Hosted, a diferença entre eles é que o Bare Metal é instalado diretamente sobre a máquina hospedeira, enquanto o Hosted é instalado sobre um sistema operacional hospedeiro (Windows, Linux ou Mac).
+
+A título de curiosidade, existem diferentes softwares que permitem rodar máquinas virtuais no seu computador: [Oracle VM VirtualBox](https://www.virtualbox.org/), [VMware Workstation](https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html), [QEMU](https://www.qemu.org/). A criação, utilização e gerenciamento de máquinas virtuais está fora do escopo deste laboratório.
+
+O principal problema das máquinas virtuais é que elas consomem muitos recursos, são lentas para inicializar e difíceis de serem gerenciadas em larga escala.
