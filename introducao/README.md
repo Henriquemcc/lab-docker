@@ -28,4 +28,6 @@ O principal problema das máquinas virtuais é que elas consomem muitos recursos
 
 O Docker surgiu como uma alternativa muito mais leve, muito mais eficiente e portátil em relação às máquinas virtuais. Ao invés de virtualizar o sistema operacional inteiro, o Docker utiliza o conceito de **containers**, que compartilham o mesmo Kernel do sistema operacional, mas que funcionam de forma isolada uns dos outros.
 
+<img src="../imagens/maquinas-virtuais-vs-containers.jpeg" alt="Comparação entre máquinas virtuais e containers. À esquerda, cada aplicação roda com suas próprias bibliotecas e sistema operacional convidado, sobre um hypervisor e um sistema operacional host. À direita, os containers compartilham o mesmo sistema operacional e engine Docker, rodando apenas com as bibliotecas necessárias para cada aplicação, sobre a mesma infraestrutura.">
+
 Dessa forma, através do Docker é possível containerizarmos uma aplicação com todas as suas dependências necessárias para rodar, permitindo que ela seja executada em qualquer lugar, seja no computador do desenvolvedor, no servidor de testes, no servidor de produção ou mesmo na nuvem.
