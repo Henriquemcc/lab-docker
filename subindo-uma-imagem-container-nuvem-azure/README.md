@@ -250,3 +250,11 @@ Substitua ```exemplo``` em ```--dns-name-label exemplo``` pelo nome de domínio 
 Substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
 
 Para mais informações do comando executado, acesse: [az container create](https://learn.microsoft.com/pt-br/cli/azure/container?view=azure-cli-latest#az-container-create)
+
+## STEP 6.7 - Acessando o container criado no navegador web
+
+Em um navegador web, na barra de endereços, digite: ```http://```, seguido do 'DNS label' criado (feito nos steps [6.6.a](#step-66a---utilizando-o-console-do-microsoft-azure) ou [6.6.b.2](#step-66b2---criando-container)), seguido de ```northcentralus.azurecontainer.io```.
+
+Neste exemplo a url ficará da seguinte forma: ```http://exemplo.northcentralus.azurecontainer.io```.
+
+Se tudo estiver correto, será exibida a página da aplicação de exemplo.
