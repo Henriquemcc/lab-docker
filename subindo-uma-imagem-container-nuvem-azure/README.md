@@ -107,7 +107,7 @@ az group create --location northcentralus --resource-group Exemplo --subscriptio
 az acr create --name exemplo --resource-group Exemplo --sku Standard --admin-enabled --location northcentralus --subscription SEU-SUBSCRIPTION-ID
 ```
 
-Em ambos comandos, substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
+Em ambos comandos, substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli). E substitua ```Exemplo``` em ```--resource-group Exemplo``` pelo nome do resource group desejado.
 
 No segundo comando substitua ```exemplo``` em ```--name exemplo``` pelo nome de seu Container Registry, que deve ser único para toda a Azure.
 
