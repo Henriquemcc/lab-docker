@@ -111,7 +111,7 @@ No segundo comando substitua ```exemplo``` em ```--name exemplo``` pelo nome de 
 
 O primeiro comando cria um Resource Group (grupo de recursos) chamado ```Exemplo``` na localidade ```northcentralus```.
 
-O segundo comando cria um Container Registry chamado ```exemplo``` também na localidade ```northcentralus```.
+O segundo comando cria um Container Registry chamado ```exemplo``` também na região ```northcentralus```.
 
 ## STEP 6.5 - Enviando a imagem para o Azure Container Registry
 
