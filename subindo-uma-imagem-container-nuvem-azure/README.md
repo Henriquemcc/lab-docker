@@ -46,6 +46,8 @@ Para mais informações sobre o comando executado, acesse: [az login](https://le
 
 ### STEP 6.4.a - Utilizando o console do Microsoft Azure
 
+Para criar um Container Instance, utilizando o Console do Azure, siga estes passos.
+
 #### STEP 6.4.a.1 - Acessando o Container Registries
 
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container Registries```, e clique na opção 'Container Registries'. 
@@ -97,25 +99,37 @@ Marque a caixa de seleção ```Admin user```.
 
 ### STEP 6.4.b - Utilizando o Azure CLI
 
+Para criar um Container Registry, utilizando o Azure CLI ao invés do Console, siga estes passos.
+
+#### STEP 6.4.b.1 - Criando o Resource Group
+
 Para criar um container registry usando o Azure CLI, em um terminal (ou prompt de comando), digite os seguintes comando:
 
 ```
 az group create --location northcentralus --resource-group Exemplo --subscription SEU-SUBSCRIPTION-ID
 ```
 
+Substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
+
+Substitua ```Exemplo``` em ```--resource-group Exemplo``` pelo nome do resource group desejado.
+
+Substitua ```exemplo``` em ```--name exemplo``` pelo nome de seu Container Registry, que deve ser único para toda a Azure.
+
+Este comando cria um Resource Group (grupo de recursos) chamado ```Exemplo``` na região ```northcentralus```.
+
+Para mais informações sobre o comando executado, acesse: [az group create](https://learn.microsoft.com/pt-br/cli/azure/group?view=azure-cli-latest#az-group-create).
+
+#### STEP 6.4.b.2 - Criando o Container Registry
+
 ```
 az acr create --name exemplo --resource-group Exemplo --sku Standard --admin-enabled --location northcentralus --subscription SEU-SUBSCRIPTION-ID
 ```
 
-Em ambos comandos, substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli). E substitua ```Exemplo``` em ```--resource-group Exemplo``` pelo nome do resource group desejado.
+Substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli). E substitua ```Exemplo``` em ```--resource-group Exemplo``` pelo nome do resource group desejado.
 
-No segundo comando substitua ```exemplo``` em ```--name exemplo``` pelo nome de seu Container Registry, que deve ser único para toda a Azure.
+Este comando cria um Container Registry chamado ```exemplo``` também na região ```northcentralus```.
 
-O primeiro comando cria um Resource Group (grupo de recursos) chamado ```Exemplo``` na região ```northcentralus```.
-
-O segundo comando cria um Container Registry chamado ```exemplo``` também na região ```northcentralus```.
-
-Para mais informações sobre os comandos executados, acesse: [az group create](https://learn.microsoft.com/pt-br/cli/azure/group?view=azure-cli-latest#az-group-create) e [az acr create](https://learn.microsoft.com/pt-br/cli/azure/acr?view=azure-cli-latest#az-acr-create).
+Para mais informações sobre o comando executado, acesse: [az acr create](https://learn.microsoft.com/pt-br/cli/azure/acr?view=azure-cli-latest#az-acr-create).
 
 ## STEP 6.5 - Enviando a imagem para o Azure Container Registry
 
@@ -154,6 +168,8 @@ O 'Registry name' ```exemplo``` em ```exemplo.azurecr.io``` deve ser substituíd
 ## STEP 6.6 - Criando novo Container no Microsoft Azure
 
 ### STEP 6.6.a - Utilizando o console do Microsoft Azure
+
+Para criar um Container Instance, utilizando o Console do Azure, siga estes passos.
 
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container instances```, e clique na opção 'Container instances'.
 
@@ -200,6 +216,8 @@ Verifique se as configurações estão corretas, e clique em 'Create'.
 <img src="../imagens/criar-container-instance-review-create.png">
 
 ### STEP 6.6.b - Utilizando o Azure CLI
+
+Para criar um Container Instance, utilizando o Azure CLI ao invés do Console, siga estes passos.
 
 #### STEP 6.6.b.1 - Obtendo credenciais
 
