@@ -271,13 +271,13 @@ Para finalizar a execução do container e deletar os recursos criados, utilizan
 
 #### STEP 6.8.b.1 - Parando a execução do Container Instance
 
-Para parar a execução do container, em um terminal (ou prompt de comando), digite o seguinte comando:
+Para parar a execução do Container Instance, em um terminal (ou prompt de comando), digite o seguinte comando:
 
 ```
 az container stop --name exemplo --resource-group Exemplo
 ```
 
-Substitua ```exemplo``` em ```--name exemplo``` pelo nome do seu container.
+Substitua ```exemplo``` em ```--name exemplo``` pelo nome do seu Container Instance.
 
 E substitua ```Exemplo``` em ```--resource-group Exemplo``` pelo nome do Resource Group do container.
 
@@ -285,16 +285,30 @@ Para mais informações sobre o comando executado, acesse: [az container stop](h
 
 #### STEP 6.8.b.2 - Excluindo o Container Instance
 
-Para excluir o container, em um terminal (ou prompt de comando), digite o seguinte comando:
+Para excluir o Container Instance, em um terminal (ou prompt de comando), digite o seguinte comando:
 
 ```
 az container delete --name exemplo --resource-group Exemplo
 ```
 
-Substitua ```exemplo``` em ```--name exemplo``` pelo nome do seu container.
+Substitua ```exemplo``` em ```--name exemplo``` pelo nome do seu Container Instance.
 
 E substitua ```Exemplo``` em ```--resource-group Exemplo``` pelo nome do Resource Group do container.
 
 Será perguntado se deseja realizar essa operação. Digite ```y``` e pressione ENTER.
 
 Para mais informações sobre o comando executado, acesse: [az container delete](https://learn.microsoft.com/pt-br/cli/azure/container?view=azure-cli-latest#az-container-delete).
+
+#### STEP 6.8.b.3 - Excluindo o Container Registry
+
+Para excluir o Container Registry, em um terminal (ou prompt de comando), digite o seguinte comando:
+
+```
+az acr delete --name exemplo
+```
+
+Substitua ```exemplo``` em ```--name exemplo``` pelo nome do seu Container Registry.
+
+Será perguntado se deseja realizar essa operação. Digite ```y``` e pressione ENTER.
+
+Para mais informações sobre o comando executado, acesse: [az acr delete](https://learn.microsoft.com/pt-br/cli/azure/acr?view=azure-cli-latest#az-acr-delete).
