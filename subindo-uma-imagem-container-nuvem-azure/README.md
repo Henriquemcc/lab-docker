@@ -205,9 +205,11 @@ Depois, clique no botão 'Next: Networking'.
 
 <img src="../imagens/criar-container-instance-basic.png" alt="Captura de tela do console do Microsoft Azure, mostrando a aba 'Basics' do menu de criação de 'Container Instance'. Nele é mostrada as seguintes informações: 'Subscription': 'Azure for Students', 'Resource group': '(New) Exemplo', 'Container name': 'Exemplo', 'Region': '(US) North Central US', 'Availability zones (Preview)': 'None', 'SKU': 'Standard', 'Image source': 'Azure Container Registry', 'Run with Azure Spot discount': Desmarcado, 'Registry': 'exemplo', 'Image': 'exemplo_imagem', 'Image tag': 'latest', 'OS Type': 'Linux', 'Size': '1 vcpu, 1.5 GiB memory, 0 gpus'. Essas opções estão contornadas por uma moldura vermelha seguida do número 1. E embaixo, os botões 'Review + create', 'Previous' e 'Next: Networking'. O 'Next: Networking' está marcado com uma moldura vermelha, seguido do número 2.">
 
-Na aba 'Networking', em 'DNS name labeling', defina um nome de domínio de sua preferência.
+Na aba 'Networking', em 'DNS name labeling' (em 1, na imagem abaixo), defina um nome de domínio de sua preferência.
 
-Depois, clique no botão 'Review + Create'.
+Em ports (em 2, na imagem abaixo), clique em ```80```, e digite ```8080``` e mantenha o protocolo ```TCP```.
+
+Depois, (em 3, na imagem abaixo) clique no botão 'Review + Create'.
 
 <img src="../imagens/criar-container-instance-networking.png" alt="Captura de tela do console do Microsoft Azure, mostrando a aba 'Networking' do menu de criação de 'Container Instance'. Nele é mostrada as seguíntes opções: 'Networking Type': 'Public', 'DNS name label': 'exemplo' e 'DNS name label scope reuse': 'Tenant'. E embaixo os botões 'Review + Create', 'Previous' e 'Next: Monitoring'. O 'Review + Create' está marcado com uma moldura vermelha.">
 
