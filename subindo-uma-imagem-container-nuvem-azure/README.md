@@ -109,7 +109,7 @@ Em ambos comandos, substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscriç
 
 No segundo comando substitua ```exemplo``` em ```--name exemplo``` pelo nome de seu Container Registry, que deve ser único para toda a Azure.
 
-O primeiro comando cria um Resource Group (grupo de recursos) chamado ```Exemplo``` na localidade ```northcentralus```.
+O primeiro comando cria um Resource Group (grupo de recursos) chamado ```Exemplo``` na região ```northcentralus```.
 
 O segundo comando cria um Container Registry chamado ```exemplo``` também na região ```northcentralus```.
 
