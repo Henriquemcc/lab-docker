@@ -91,7 +91,9 @@ Marque a caixa de seleção ```Admin user```.
 
 <img src="../imagens/habilitar-admin-container-registry-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando as 'Access Keys' do 'Container Registry' 'Exemplo'. São mostrados os seguintes valores: 'Registry name': 'exemplo', 'Login server': 'exemplo.azurecr.io', 'Admin user': Desmarcado e 'Username': 'exemplo'. A caixa de seleção de 'Admin user' está contornada por uma moldura vermelha, indicando que ela deve ser marcada.">
 
-### STEP 6.4.5 - Faça login no Azure Container Registry
+## STEP 6.5 - Enviando a imagem para o Azure Container Registry
+
+### STEP 6.5.1 - Faça login no Azure Container Registry
 
 Para realizarmos login no Azure Container Registry, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -101,7 +103,7 @@ az acr login --name exemplo
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
-### STEP 6.4.6 - Crie uma tag para a imagem
+### STEP 6.5.2 - Crie uma tag para a imagem
 
 Para que o Docker possa vincular a imagem criada ao container, é necessário a criação de uma tag. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -111,7 +113,7 @@ docker tag exemplo:latest exemplo.azurecr.io/exemplo_imagem
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
-### STEP 6.4.7 - Enviando a imagem ao container registry
+### STEP 6.5.3 - Enviando a imagem ao container registry
 
 Para enviarmos a imagem criada ao container registry, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -121,7 +123,7 @@ docker push exemplo.azurecr.io/exemplo_imagem:latest
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
-### STEP 6.4.8 - Criando novo Container
+## STEP 6.6 - Criando novo Container no Microsoft Azure
 
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container instances```, e clique na opção 'Container instances'.
 
