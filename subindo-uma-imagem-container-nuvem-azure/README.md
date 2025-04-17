@@ -101,7 +101,7 @@ Para realizarmos login no Azure Container Registry, em um terminal (ou Prompt de
 az acr login --name exemplo
 ```
 
-O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
+O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry.
 
 ### STEP 6.5.2 - Crie uma tag para a imagem
 
@@ -111,7 +111,7 @@ Para que o Docker possa vincular a imagem criada ao container, é necessário a 
 docker tag exemplo:latest exemplo.azurecr.io/exemplo_imagem
 ```
 
-O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
+O 'Registry name' ```exemplo``` em ```exemplo.azurecr.io``` deve ser substituído pelo nome do seu container registry.
 
 ### STEP 6.5.3 - Enviando a imagem ao container registry
 
@@ -121,7 +121,7 @@ Para enviarmos a imagem criada ao container registry, em um terminal (ou Prompt 
 docker push exemplo.azurecr.io/exemplo_imagem:latest
 ```
 
-O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
+O 'Registry name' ```exemplo``` em ```exemplo.azurecr.io``` deve ser substituído pelo nome do seu container registry.
 
 ## STEP 6.6 - Criando novo Container no Microsoft Azure
 
