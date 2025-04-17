@@ -10,15 +10,45 @@ O Instituto de Ciências Exatas e Informática (ICEI) da PUC Minas possuí parce
 
 Instale o Azure CLI em sua máquina. Siga os passos do tutorial oficial da Microsoft: https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli
 
-## STEP 6.3 - Criando Container Registry no Microsoft Azure
+### STEP 6.3 - Realizando login no Azure CLI
 
-### STEP 6.3.1 - Acessando o Container Registries
+Com o Azure CLI instalado, em um terminal, digite o seguinte comando:
+
+```
+az login
+```
+
+Uma janela no navegador web padrão se abrirá, e solicitará o seu login e senha do Microsoft Azure. Faça login com o usuário e senha utilizados na criação da conta do Azure.
+
+No terminal, será exibida a seguinte mensagem:
+
+```
+A web browser has been opened at https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize. Please continue the login in the web browser. If no web browser is available or if the web browser fails to open, use device code flow with `az login --use-device-code`.
+
+Retrieving tenants and subscriptions for the selection...
+
+[Tenant and subscription selection]
+
+No     Subscription name    Subscription ID                       Tenant
+-----  -------------------  ------------------------------------  ---------------
+[1] *  Azure for Students   SEU-SUBSCRIPTION-ID                   sga.pucminas.br
+
+The default is marked with an *; the default tenant is 'sga.pucminas.br' and subscription is 'Azure for Students' (SEU-SUBSCRIPTION-ID).
+
+Select a subscription and tenant (Type a number or Enter for no changes):
+```
+
+Digite o número (```No```) da inscrição cujo ```Subscription name``` esteja escrito ```Azure for Students``` e pressione ENTER.
+
+## STEP 6.4 - Criando Container Registry no Microsoft Azure
+
+### STEP 6.4.1 - Acessando o Container Registries
 
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container Registries```, e clique na opção 'Container Registries'. 
 
 <img src="../imagens/pesquisar-container-registries-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o resultado da pesquisa por 'Container Registries'. As opções que aparecem são: 'Container Registries', 'Container Apps', 'Container Instances' e 'App Registration'. A opção 'Container Registries' está contornada de uma moldura vermelha, indicando que esta deve ser selecionada.">
 
-### STEP 6.3.2 - Criando um novo container Registry
+### STEP 6.4.2 - Criando um novo container Registry
 
 No menu 'Container Registries', clique no botão 'Create'.
 
@@ -53,7 +83,7 @@ Será exibido o painel do container registry criado.
 
 <img src="../imagens/registry-criado-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o 'Container Registry' criado.">
 
-### STEP 6.3.3 - Adicionando acesso de administrador ao Container Registry
+### STEP 6.4.3 - Adicionando acesso de administrador ao Container Registry
 
 No 'Container Registry' criado, clique em 'Settings' e em 'Access Keys'.
 
@@ -61,17 +91,7 @@ Marque a caixa de seleção ```Admin user```.
 
 <img src="../imagens/habilitar-admin-container-registry-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando as 'Access Keys' do 'Container Registry' 'Exemplo'. São mostrados os seguintes valores: 'Registry name': 'exemplo', 'Login server': 'exemplo.azurecr.io', 'Admin user': Desmarcado e 'Username': 'exemplo'. A caixa de seleção de 'Admin user' está contornada por uma moldura vermelha, indicando que ela deve ser marcada.">
 
-### STEP 6.3.5 - Faça login no Azure CLI
-
-Agora iremos realizar login no Azure CLI. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
-
-```
-az login
-```
-
-Uma janela no navegador web se abrirá, e será exibida a opção para entrar em sua conta da Azure.
-
-### STEP 6.3.6 - Faça login no Azure Container Registry
+### STEP 6.4.5 - Faça login no Azure Container Registry
 
 Para realizarmos login no Azure Container Registry, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -81,7 +101,7 @@ az acr login --name exemplo
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
-### STEP 6.3.7 - Crie uma tag para a imagem
+### STEP 6.4.6 - Crie uma tag para a imagem
 
 Para que o Docker possa vincular a imagem criada ao container, é necessário a criação de uma tag. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -91,7 +111,7 @@ docker tag exemplo:latest exemplo.azurecr.io/exemplo_imagem
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
-### STEP 6.3.8 - Enviando a imagem ao container registry
+### STEP 6.4.7 - Enviando a imagem ao container registry
 
 Para enviarmos a imagem criada ao container registry, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
@@ -101,7 +121,7 @@ docker push exemplo.azurecr.io/exemplo_imagem:latest
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry, que deve ser único.
 
-### STEP 6.3.9 - Criando novo Container
+### STEP 6.4.8 - Criando novo Container
 
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container instances```, e clique na opção 'Container instances'.
 
