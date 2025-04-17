@@ -162,7 +162,7 @@ Na aba basics, nos campos (em 1, na imagem abaixo), deixe da seguinte forma:
 | Subscription                 | 'Azure for Students'             |
 | Resource group               | 'Exemplo'                        |
 | Container name               | 'exemplo'                        |
-| Region                       | '(US) North Central US           |
+| Region                       | '(US) North Central US'          |
 | Availability zones (Preview) | None                             |
 | SKU                          | 'Standard'                       |
 | Image source                 | 'Azure Container Registry'       |
