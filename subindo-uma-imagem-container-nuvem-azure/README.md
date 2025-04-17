@@ -6,11 +6,11 @@ Neste STEP você subirá a aplicação containerizada para a nuvem do Microsoft 
 
 O Instituto de Ciências Exatas e Informática (ICEI) da PUC Minas possuí parceria com a Microsoft, dando um crédito de US$100 para cada aluno anualmente. Para criar sua conta de estudante, basta seguir o [tutorial no site do ICEI](https://icei.pucminas.br/index.php/azurepucminas).
 
-### STEP 6.2 - Instalando o Azure CLI
+## STEP 6.2 - Instalando o Azure CLI
 
 Instale o Azure CLI em sua máquina. Siga os passos do tutorial oficial da Microsoft: https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli
 
-### STEP 6.3 - Realizando login no Azure CLI
+## STEP 6.3 - Realizando login no Azure CLI
 
 Com o Azure CLI instalado, em um terminal, digite o seguinte comando:
 
