@@ -40,6 +40,8 @@ Select a subscription and tenant (Type a number or Enter for no changes):
 
 Digite o número (```No```) da inscrição cujo ```Subscription name``` esteja escrito ```Azure for Students``` e pressione ENTER.
 
+Para mais informações sobre o comando executado, acesse: [az login](https://learn.microsoft.com/pt-br/cli/azure/reference-index?view=azure-cli-latest#az-login).
+
 ## STEP 6.4 - Criando Container Registry no Microsoft Azure
 
 ### STEP 6.4.a - Utilizando o console do Microsoft Azure
@@ -112,6 +114,8 @@ No segundo comando substitua ```exemplo``` em ```--name exemplo``` pelo nome de 
 O primeiro comando cria um Resource Group (grupo de recursos) chamado ```Exemplo``` na região ```northcentralus```.
 
 O segundo comando cria um Container Registry chamado ```exemplo``` também na região ```northcentralus```.
+
+Para mais informações sobre os comandos executados, acesse: [azure group create](https://learn.microsoft.com/pt-br/cli/azure/group?view=azure-cli-latest#az-group-create) e [az acr create](https://learn.microsoft.com/pt-br/cli/azure/acr?view=azure-cli-latest#az-acr-create).
 
 ## STEP 6.5 - Enviando a imagem para o Azure Container Registry
 
@@ -209,6 +213,8 @@ E será exibido em formato JSON o nome de usuário e as senhas do Container Regi
 
 Substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
 
+Para mais informações do comando executado, acesse: [azr acr credential show](https://learn.microsoft.com/pt-br/cli/azure/acr/credential?view=azure-cli-latest#az-acr-credential-show)
+
 #### STEP 6.6.b.2 - Criando Container
 
 E para criar o container, usando o Azure CLI, em um terminal (ou prompt de comando), digite o seguinte comando:
@@ -220,3 +226,5 @@ az container create --resource-group Exemplo --cpu 1 --dns-name-label exemplo --
 Substitua ```exemplo``` em ```--dns-name-label exemplo``` pelo nome de domínio desejado. E substitua ```exemplo``` em ```exemplo.azurecr.io/exemplo_imagem:latest``` pelo nome de seu Container Registry.
 
 Substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
+
+Para mais informações do comando executado, acesse: [az container create](https://learn.microsoft.com/pt-br/cli/azure/container?view=azure-cli-latest#az-container-create)
