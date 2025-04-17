@@ -312,3 +312,17 @@ Substitua ```exemplo``` em ```--name exemplo``` pelo nome do seu Container Regis
 Será perguntado se deseja realizar essa operação. Digite ```y``` e pressione ENTER.
 
 Para mais informações sobre o comando executado, acesse: [az acr delete](https://learn.microsoft.com/pt-br/cli/azure/acr?view=azure-cli-latest#az-acr-delete).
+
+#### STEP 6.8.b.4 - Excluindo o Resource Group
+
+Para excluir o Resource Group, em um terminal (ou prompt de comando), digite o seguinte comando:
+
+```
+az group delete --resource-group Exemplo
+```
+
+Substitua ```Exemplo``` em ```--resource-group Exemplo``` pelo nome do seu Resource Group.
+
+Será perguntado se deseja realizar essa operação. Digite ```y``` e pressione ENTER.
+
+Para mais informações sobre o comando executado, acesse: [az group delete](https://learn.microsoft.com/pt-br/cli/azure/group?view=azure-cli-latest#az-group-delete).
