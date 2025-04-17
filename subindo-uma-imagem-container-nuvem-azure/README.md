@@ -115,7 +115,7 @@ O primeiro comando cria um Resource Group (grupo de recursos) chamado ```Exemplo
 
 O segundo comando cria um Container Registry chamado ```exemplo``` também na região ```northcentralus```.
 
-Para mais informações sobre os comandos executados, acesse: [azure group create](https://learn.microsoft.com/pt-br/cli/azure/group?view=azure-cli-latest#az-group-create) e [az acr create](https://learn.microsoft.com/pt-br/cli/azure/acr?view=azure-cli-latest#az-acr-create).
+Para mais informações sobre os comandos executados, acesse: [az group create](https://learn.microsoft.com/pt-br/cli/azure/group?view=azure-cli-latest#az-group-create) e [az acr create](https://learn.microsoft.com/pt-br/cli/azure/acr?view=azure-cli-latest#az-acr-create).
 
 ## STEP 6.5 - Enviando a imagem para o Azure Container Registry
 
@@ -128,6 +128,8 @@ az acr login --name exemplo
 ```
 
 O 'Registry name' ```exemplo``` deve ser substituído pelo nome do seu container registry.
+
+Para mais informações sobre os comandos executados, acesse: [az acr login](https://learn.microsoft.com/pt-br/cli/azure/acr?view=azure-cli-latest#az-acr-login).
 
 ### STEP 6.5.2 - Crie uma tag para a imagem
 
@@ -213,7 +215,7 @@ E será exibido em formato JSON o nome de usuário e as senhas do Container Regi
 
 Substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
 
-Para mais informações do comando executado, acesse: [azr acr credential show](https://learn.microsoft.com/pt-br/cli/azure/acr/credential?view=azure-cli-latest#az-acr-credential-show)
+Para mais informações do comando executado, acesse: [az acr credential show](https://learn.microsoft.com/pt-br/cli/azure/acr/credential?view=azure-cli-latest#az-acr-credential-show)
 
 #### STEP 6.6.b.2 - Criando Container
 
