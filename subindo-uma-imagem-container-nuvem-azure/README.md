@@ -42,13 +42,15 @@ Digite o número (```No```) da inscrição cujo ```Subscription name``` esteja e
 
 ## STEP 6.4 - Criando Container Registry no Microsoft Azure
 
-### STEP 6.4.1 - Acessando o Container Registries
+### STEP 6.4.a - Utilizando o console do Microsoft Azure
+
+#### STEP 6.4.a.1 - Acessando o Container Registries
 
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container Registries```, e clique na opção 'Container Registries'. 
 
 <img src="../imagens/pesquisar-container-registries-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o resultado da pesquisa por 'Container Registries'. As opções que aparecem são: 'Container Registries', 'Container Apps', 'Container Instances' e 'App Registration'. A opção 'Container Registries' está contornada de uma moldura vermelha, indicando que esta deve ser selecionada.">
 
-### STEP 6.4.2 - Criando um novo container Registry
+#### STEP 6.4.a.2 - Criando um novo container Registry
 
 No menu 'Container Registries', clique no botão 'Create'.
 
@@ -83,13 +85,33 @@ Será exibido o painel do container registry criado.
 
 <img src="../imagens/registry-criado-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o 'Container Registry' criado.">
 
-### STEP 6.4.3 - Adicionando acesso de administrador ao Container Registry
+#### STEP 6.4.a.3 - Adicionando acesso de administrador ao Container Registry
 
 No 'Container Registry' criado, clique em 'Settings' e em 'Access Keys'.
 
 Marque a caixa de seleção ```Admin user```.
 
 <img src="../imagens/habilitar-admin-container-registry-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando as 'Access Keys' do 'Container Registry' 'Exemplo'. São mostrados os seguintes valores: 'Registry name': 'exemplo', 'Login server': 'exemplo.azurecr.io', 'Admin user': Desmarcado e 'Username': 'exemplo'. A caixa de seleção de 'Admin user' está contornada por uma moldura vermelha, indicando que ela deve ser marcada.">
+
+### STEP 6.4.b - Utilizando o Azure CLI
+
+Para criar um container registry usando o Azure CLI, em um terminal (ou prompt de comando), digite os seguintes comando:
+
+```
+az group create --location northcentralus --resource-group Exemplo --subscription SEU-SUBSCRIPTION-ID
+```
+
+```
+az acr create --name exemplo --resource-group Exemplo --sku Standard --admin-enabled --location northcentralus --subscription SEU-SUBSCRIPTION-ID
+```
+
+Em ambos comandos, substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
+
+No segundo comando substitua ```exemplo``` em ```--name exemplo``` pelo nome de seu Container Registry, que deve ser único para toda a Azure.
+
+O primeiro comando cria um Resource Group (grupo de recursos) chamado ```Exemplo``` na localidade ```northcentralus```.
+
+O segundo comando cria um Container Registry chamado ```exemplo``` também na localidade ```northcentralus```.
 
 ## STEP 6.5 - Enviando a imagem para o Azure Container Registry
 
