@@ -249,6 +249,8 @@ Substitua ```exemplo``` em ```--dns-name-label exemplo``` pelo nome de domínio 
 
 Substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
 
+Substitua ```exemplo``` em ```--name exemplo``` pelo nome desejado para o seu container.
+
 Para mais informações do comando executado, acesse: [az container create](https://learn.microsoft.com/pt-br/cli/azure/container?view=azure-cli-latest#az-container-create)
 
 ## STEP 6.7 - Acessando o container criado no navegador web
@@ -258,3 +260,25 @@ Em um navegador web, na barra de endereços, digite: ```http://```, seguido do '
 Neste exemplo a url ficará da seguinte forma: ```http://exemplo.northcentralus.azurecontainer.io```.
 
 Se tudo estiver correto, será exibida a página da aplicação de exemplo.
+
+## STEP 6.8 - Apagando os recursos criados
+
+Para economizar os créditos de estudante do Microsoft Azure, recomenda-se que, quando terminar de utilizar a aplicação, pare a execução do container, e delete os recursos criados.
+
+### STEP 6.8.b - Utilizando o Azure CLI
+
+Para finalizar a execução do container e deletar os recursos criados, utilizando o Azure CLI, ao invés do Console, siga estes passos.
+
+#### STEP 6.8.b.1 - Parando a execução do container
+
+Para parar a execução do container, em um terminal (ou prompt de comando), digite o seguinte comando:
+
+```
+az container stop --name exemplo --resource-group Exemplo
+```
+
+Substitua ```exemplo``` em ```--name exemplo``` pelo nome do seu container.
+
+E substitua ```Exemplo``` em ```--resource-group Exemplo``` pelo nome do Resource Group do container.
+
+Para mais informações sobre o comando executado, acesse: [az container stop](https://learn.microsoft.com/pt-br/cli/azure/container?view=azure-cli-latest#az-container-stop).
