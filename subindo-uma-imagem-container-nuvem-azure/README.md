@@ -147,6 +147,8 @@ O 'Registry name' ```exemplo``` em ```exemplo.azurecr.io``` deve ser substituíd
 
 ## STEP 6.6 - Criando novo Container no Microsoft Azure
 
+### STEP 6.6.a - Utilizando o console do Microsoft Azure
+
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container instances```, e clique na opção 'Container instances'.
 
 <img src="../imagens/pesquisar-container-registries-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o resultado da pesquisa por 'Container instances'. As opções que aparecem são: 'Container instances', 'BareMetal Instances', 'Container Apps' e 'Instance pools'. A opção 'Container instances' está contornada de uma moldura vermelha, indicando que esta deve ser selecionada.">
@@ -190,3 +192,31 @@ Depois, clique no botão 'Review + Create'.
 Verifique se as configurações estão corretas, e clique em 'Create'. 
 
 <img src="../imagens/criar-container-instance-review-create.png">
+
+### STEP 6.6.b - Utilizando o Azure CLI
+
+#### STEP 6.6.b.1 - Obtendo credenciais
+
+Para criar um Container Instance, usando o Azure CLI, será necessário primeiro obter o nome de usuário e senha do Azure Container Registry criado. Para isso, em um terminal (ou prompt de comando), digite o seguinte comando: 
+
+```
+az acr credential show --name exemplo --subscription SEU-SUBSCRIPTION-ID
+```
+
+Substitua ```exemplo``` em ```--name exemplo``` pelo nome de seu Container Registry.
+
+E será exibido em formato JSON o nome de usuário e as senhas do Container Registry.
+
+Substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
+
+#### STEP 6.6.b.2 - Criando Container
+
+E para criar o container, usando o Azure CLI, em um terminal (ou prompt de comando), digite o seguinte comando:
+
+```
+az container create --resource-group Exemplo --cpu 1 --dns-name-label exemplo --image exemplo.azurecr.io/exemplo_imagem:latest --location northcentralus --memory 1.5 --name exemplo --os-type Linux --ports 8080 --protocol TCP --sku Standard --subscription SEU-SUBSCRIPTION-ID
+```
+
+Substitua ```exemplo``` em ```--dns-name-label exemplo``` pelo nome de domínio desejado. E substitua ```exemplo``` em ```exemplo.azurecr.io/exemplo_imagem:latest``` pelo nome de seu Container Registry.
+
+Substitua o ```SEU-SUBSCRIPTION-ID``` pelo ID de sua inscrição no Azure, obtido no [STEP 6.3](#step-63---realizando-login-no-azure-cli).
