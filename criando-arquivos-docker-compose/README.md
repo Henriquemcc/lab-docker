@@ -6,6 +6,8 @@ Neste STEP você aprenderá a criar arquivos Docker Compose. Para isso, utilizar
 
 Primeiro, iremos entender o problema que o Docker Compose resolve. Imaginamos que tivéssemos uma aplicação Wordpress que depende de um banco de dados MySQL. Para que pudéssemos subir esses containers seria necessário subir manualmente o MySQL e o Wordpress.
 
+<img src="../imagens/diagrama-wordpress-docker-compose.png" alt="Diagrama ilustrando os containers criados. Na esquerda, um cubo, representando um container, escrito 'MySQL Server'. No centro, outro cubo, representando container, escrito 'Wordpress Server (Apache + PHP)'. E a direita, um computador, representando o cliente, escrito 'Cliente (Navegador Web)'.">
+
 Para subirmos o MySQL, teríamos que utilizar o seguinte comando:
 
 ```
