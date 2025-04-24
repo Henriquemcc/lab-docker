@@ -278,7 +278,7 @@ Para economizar os créditos de estudante do Microsoft Azure, recomenda-se que, 
 
 Para finalizar a execução do container e deletar os recursos criados, utilizando o Console do Microsoft Azure, siga estes passos.
 
-#### STEP 6.8.a.1 - Parando a execução do Container Instance
+#### STEP 6.8.a.1 - Parando e deletando o Container Instance
 
 Para parar a execução do Container Instance,
 
