@@ -318,6 +318,8 @@ Para deletar o Resource Group,
 
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Resource groups```, e clique na opção 'Resource groups'.
 
+<img src="../imagens/pesquisar-resource-group-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o resultado da pesquisa por 'Resource groups'. As opções que aparecem são: 'Resource groups', 'Subscriptions', 'Resource Guards' e 'Resource Graph Explorer'. A opção 'Resource groups' está contornada de uma moldura vermelha, indicando que esta deve ser clicada.">
+
 Será mostrado os Resource Groups criados. Clique no nome do Resource Group criado, e uma aba lateral se abrirá.
 
 <img src="../imagens/listar-resource-groups-deletar-resource-group-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o menu 'Resource groups', com o Resource Group 'Exemplo' contornado por uma moldura vermelha, indicando que ele deve ser clicado."/>
