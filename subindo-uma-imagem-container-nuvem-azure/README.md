@@ -312,6 +312,18 @@ Clique em 'Delete', e será exibida outra caixa de confirmação, clique em 'Yes
 
 <img src="../imagens/deletar-container-registry.png" alt="Captura de tela do console do Microsoft Azure, mostrando o Container Registry criado. Nele, o botão 'Delete' está contornado por uma moldura vermelha, indicando que ele deve ser clicado."/>
 
+#### STEP 6.8.a.3 - Deletando o Resource Group
+
+Para deletar o Resource Group,
+
+No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Resource groups```, e clique na opção 'Resource groups'.
+
+Será mostrado os Resource Groups criados. Clique no nome do Resource Group criado, e uma aba lateral se abrirá.
+
+<img src="../imagens/listar-resource-groups-deletar-resource-group-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o menu 'Resource groups', com o Resource Group 'Exemplo' contornado por uma moldura vermelha, indicando que ele deve ser clicado."/>
+
+Clique em 'Delete', e será exibido outra caixa de confirmação, digite o nome do Resource Group criado, clique em 'Delete', e depois confirme novamente. Dessa forma, o Resource Group será deletado.
+
 ### STEP 6.8.b - Utilizando o Azure CLI
 
 Para finalizar a execução do container e deletar os recursos criados, utilizando o Azure CLI, ao invés do Console, siga estes passos.
