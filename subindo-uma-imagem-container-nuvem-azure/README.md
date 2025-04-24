@@ -304,6 +304,9 @@ No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa
 
 <img src="../imagens/pesquisar-container-registries-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o resultado da pesquisa por 'Container Registries'. As opções que aparecem são: 'Container Registries', 'Container Apps', 'Container Instances' e 'App Registration'. A opção 'Container Registries' está contornada de uma moldura vermelha, indicando que esta deve ser selecionada.">
 
+Será mostrado os Containers Registries criados. Clique no nome do Container Registry criado, e uma aba lateral se abrirá.
+
+<img src="../imagens/listar-container-registries-deletar-container-registry.png" alt="Captura de tela do console do Microsoft Azure, mostrando o menu 'Container registries', com o container registry 'exemplo' contornado de uma moldura vermelha, indicando que ele deve ser clicado."/>
 
 ### STEP 6.8.b - Utilizando o Azure CLI
 
