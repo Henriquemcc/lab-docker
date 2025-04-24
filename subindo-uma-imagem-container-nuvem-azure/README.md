@@ -274,6 +274,23 @@ Se tudo estiver correto, será exibida a página da aplicação de exemplo.
 
 Para economizar os créditos de estudante do Microsoft Azure, recomenda-se que, quando terminar de utilizar a aplicação, pare a execução do container, e delete os recursos criados.
 
+### STEP 6.8.a - Utilizando o console do Microsoft Azure
+
+Para finalizar a execução do container e deletar os recursos criados, utilizando o Console do Microsoft Azure, siga estes passos.
+
+#### STEP 6.8.a.1 - Parando a execução do Container Instance
+
+Para parar a execução do Container Instance,
+
+No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container instances```, e clique na opção 'Container instances'.
+
+<img src="../imagens/pesquisar-container-instances-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o resultado da pesquisa por 'Container instances'. As opções que aparecem são: 'Container instances', 'BareMetal Instances', 'Container Apps' e 'Instance pools'. A opção 'Container instances' está contornada de uma moldura vermelha, indicando que esta deve ser selecionada.">
+
+Será mostrado os Containers Instances criados. Clique no nome do container criado, e uma aba lateral se abrirá.
+
+<img src="../imagens/listar-containers-parar-apagar-container-instance-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o menu 'Container instances', com o container 'exemplo' contornado de uma moldura vermelha, indicando que ele deve ser clicado.">
+
+
 ### STEP 6.8.b - Utilizando o Azure CLI
 
 Para finalizar a execução do container e deletar os recursos criados, utilizando o Azure CLI, ao invés do Console, siga estes passos.
