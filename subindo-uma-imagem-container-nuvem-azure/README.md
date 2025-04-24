@@ -290,6 +290,12 @@ Será mostrado os Containers Instances criados. Clique no nome do container cria
 
 <img src="../imagens/listar-containers-parar-apagar-container-instance-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o menu 'Container instances', com o container 'exemplo' contornado de uma moldura vermelha, indicando que ele deve ser clicado.">
 
+Clique em 'Stop', e será exibida uma caixa de confirmação, clique em 'Yes'. Dessa forma, o Container Instance irá parar de executar.
+
+Depois, clique em 'Delete', e será exibida outra caixa de confirmação, clique em 'Yes'. Dessa forma, o Container Instance será deletado.
+
+<img src="../imagens/parar-apagar-containre-instance-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o Container Instance criado. Nele, os botões 'Stop' e 'Delete' estão contornados por molduras vermelhas, seguidos respactivamente dos números 1 e 2, indicando que eles devem ser clicados em ordem.">
+
 
 ### STEP 6.8.b - Utilizando o Azure CLI
 
