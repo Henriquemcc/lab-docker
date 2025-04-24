@@ -280,7 +280,7 @@ Para finalizar a execução do container e deletar os recursos criados, utilizan
 
 #### STEP 6.8.a.1 - Parando e deletando o Container Instance
 
-Para parar a execução do Container Instance,
+Para parar e deletar o Container Instance,
 
 No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container instances```, e clique na opção 'Container instances'.
 
