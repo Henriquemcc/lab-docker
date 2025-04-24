@@ -296,6 +296,14 @@ Depois, clique em 'Delete', e será exibida outra caixa de confirmação, clique
 
 <img src="../imagens/parar-apagar-containre-instance-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o Container Instance criado. Nele, os botões 'Stop' e 'Delete' estão contornados por molduras vermelhas, seguidos respactivamente dos números 1 e 2, indicando que eles devem ser clicados em ordem.">
 
+#### STEP 6.8.a.2 - Deletando o Container Registry
+
+Para deletar o Container Registry,
+
+No [console do Microsoft Azure](https://portal.azure.com/), na barra de pesquisa, digite ```Container Registries```, e clique na opção 'Container Registries'.
+
+<img src="../imagens/pesquisar-container-registries-azure.png" alt="Captura de tela do console do Microsoft Azure, mostrando o resultado da pesquisa por 'Container Registries'. As opções que aparecem são: 'Container Registries', 'Container Apps', 'Container Instances' e 'App Registration'. A opção 'Container Registries' está contornada de uma moldura vermelha, indicando que esta deve ser selecionada.">
+
 
 ### STEP 6.8.b - Utilizando o Azure CLI
 
