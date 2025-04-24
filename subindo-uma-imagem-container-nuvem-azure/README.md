@@ -264,9 +264,9 @@ Para mais informações do comando executado, acesse: [az container create](http
 
 ## STEP 6.7 - Acessando o container criado no navegador web
 
-Em um navegador web, na barra de endereços, digite: ```http://```, seguido do 'DNS label' criado (feito nos steps [6.6.a](#step-66a---utilizando-o-console-do-microsoft-azure) ou [6.6.b.2](#step-66b2---criando-container)), seguido de ```northcentralus.azurecontainer.io```.
+Em um navegador web, na barra de endereços, digite: ```http://```, seguido do 'DNS label' criado (feito nos steps [6.6.a](#step-66a---utilizando-o-console-do-microsoft-azure) ou [6.6.b.2](#step-66b2---criando-container)), seguido de ```northcentralus.azurecontainer.io```, ```:``` e da porta ```8080```.
 
-Neste exemplo a url ficará da seguinte forma: ```http://exemplo.northcentralus.azurecontainer.io```.
+Neste exemplo a url ficará da seguinte forma: ```http://exemplo.northcentralus.azurecontainer.io:8080```.
 
 Se tudo estiver correto, será exibida a página da aplicação de exemplo.
 
