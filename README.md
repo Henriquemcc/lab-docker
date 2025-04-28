@@ -53,7 +53,6 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 - [Docker Docs](https://docs.docker.com).
 - Documentação
   - [Comandos básicos do Docker](documentacao/comandos-basicos/README.md)
-  - [Arquivos Docker Compose]()
 
 ## Roadmap
 
