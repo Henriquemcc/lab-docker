@@ -33,7 +33,6 @@ Este projeto pode ser aplicado em diversas situações:
   * [STEP 5 - Containerizando uma Aplicação](#step-5---containerizando-uma-aplicação)
   * [STEP 6 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure](#step-6---subindo-uma-imagem-de-container-para-a-nuvem-do-microsoft-azure)
   * [Desafio](#desafio)
-  * [Extra](#extra)
 
 ## Instalações
 
@@ -87,10 +86,6 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 ### Desafio
 
 [Desafio](desafio/README.md)
-
-### Extra
-
-[Extra]()
 
 ## Contato
 
