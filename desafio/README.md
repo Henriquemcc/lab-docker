@@ -1,3 +1,0 @@
-# Desafio
-
-O desafio deste laboratório consiste em containerizar uma aplicação já existente que permita ser acessada pela web e faça o uso de um banco de dados e um banco de objetos. A aplicação deverá ser containerizada por meio de um Dockerfile, e deverá ser criado um Docker Compose o qual permita essa aplicação ser instanciada junto do banco de dados e do banco de objetos. No final serão instanciados essa aplicação, o banco de dados e o banco de objetos na nuvem do Microsoft Azure.

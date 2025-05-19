@@ -32,7 +32,6 @@ Este projeto pode ser aplicado em diversas situações:
   * [STEP 4 - Criando Arquivos Docker Compose](#step-4---criando-arquivos-docker-compose)
   * [STEP 5 - Containerizando uma Aplicação](#step-5---containerizando-uma-aplicação)
   * [STEP 6 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure](#step-6---subindo-uma-imagem-de-container-para-a-nuvem-do-microsoft-azure)
-  * [Desafio](#desafio)
 
 ## Instalações
 
@@ -82,10 +81,6 @@ Siga com precisão as orientações de configuração do ambiente para assegurar
 ### STEP 6 - Subindo uma Imagem de Container para a Nuvem do Microsoft Azure
 
 [Subindo uma imagem de container para a nuvem do Microsoft Azure](subindo-uma-imagem-container-nuvem-azure/README.md)
-
-### Desafio
-
-[Desafio](desafio/README.md)
 
 ## Contato
 
