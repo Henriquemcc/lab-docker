@@ -97,7 +97,7 @@ Para terminar a execução, digite o comando: Control + C.
 Nesta etapa, iremos criar e executar o container Docker acima, para rodar em segundo plano, desalocando do terminal. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
 ```
-docker run --detach --publish 80:8080 nginx
+docker run --detach --publish 8080:80 nginx
 ```
 
 A opção ```--detach``` roda o container em segundo plano e imprime o ID do container.
