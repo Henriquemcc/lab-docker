@@ -49,7 +49,7 @@ A imagem foi baixada do Docker Hub. Para mais informações sobre a imagem baixa
 Nesta próxima etapa, criaremos o container Docker, com a imagem baixada. Para isso, em um terminal (ou Prompt de Comando), digite o seguinte comando:
 
 ```
-docker run --interactive --tty --publish 80:8080 nginx
+docker run --interactive --tty --publish 8080:80 nginx
 ```
 
 A opção ```--interactive``` (ou ```-i```) força o container executar de forma interativa.
